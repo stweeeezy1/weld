@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
+
+:root {
+  /* Colours */
+  --color-text: #fff;
+  --color-text2: #bebebe;
+  --color-numbers: #e25d5f;
+
+  /* Gradient */
+  --gradient-bg: linear-gradient(135deg, #1c3d5a, #235077, #c5907e);
+  --gradient-bg2: linear-gradient(135deg, #222222, #414141);
+  --gradient-bg3: linear-gradient(135deg, #3d3939, #222222);
+  --gradient-btn: linear-gradient(135deg, #ff7f54, #ff954d);
+
+  /* Fonts */
+  --font-mon: "Montserrat", sans-serif;
+}

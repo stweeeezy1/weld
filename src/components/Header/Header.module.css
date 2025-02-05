@@ -1,0 +1,84 @@
+.header_container {
+  background: var(--gradient-bg);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.logo {
+  width: 77px;
+  height: 75px;
+}
+
+.header_main_image {
+  width: 800px;
+  margin-top: 210px;
+  margin-right: 150px;
+}
+
+.header {
+  margin-top: 20px;
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+}
+
+.nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  cursor: pointer;
+  font-size: 16px;
+  list-style: none;
+  font-weight: 500;
+  color: var(--color-text);
+  margin-left: 35px;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav li:hover {
+  color: var(--color-text2);
+}
+
+.header_main {
+  margin-top: 95px;
+  display: flex;
+  height: 90vh;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_main_text h1 {
+  font-weight: 900;
+  font-size: 60px;
+  color: var(--color-text);
+  width: 800px;
+  height: 156px;
+}
+.header_main_text h3 {
+  font-weight: 500;
+  font-size: 30px;
+  color: var(--color-text2);
+  margin-top: 65px;
+  width: 562px;
+  height: 135px;
+}
+.header_main_text button {
+  font-weight: 600;
+  font-size: 38px;
+  color: var(--color-text);
+  background: var(--gradient-btn);
+  border-radius: 50px;
+  width: 479px;
+  height: 110px;
+  border-style: none;
+  margin-top: 65px;
+}
+.header_main_text {
+  margin-left: 6%;
+}
