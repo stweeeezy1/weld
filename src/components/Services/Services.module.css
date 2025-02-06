@@ -2,7 +2,7 @@
   background: var(--gradient-bg4);
   display: flex;
   justify-content: center;
-  height: 1400px;
+  max-height: 1400px;
 }
 .servicesContainerMain {
   width: 80%;
@@ -30,21 +30,25 @@
 .servicesBlock4 {
   margin-top: 35px;
   width: 100%;
-  height: 300px;
+  min-height: 300px;
   border-radius: 50px;
   background: var(--gradient-bg2);
   color: var(--color-text);
   display: grid;
+  display: flex;
+  flex-wrap: wrap;
 }
 .servicesBlock2,
 .servicesBlock3 {
   margin-top: 35px;
-  height: 300px;
+  max-height: 300px;
   width: calc(50% - 20px);
   border-radius: 50px;
   background: var(--gradient-bg2);
   color: var(--color-text);
   display: grid;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .blockHead1,
@@ -77,4 +81,54 @@
 .blockInfo4,
 .blockHead4 {
   margin-left: 60px;
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .servicesContainerMain {
+    width: 90%;
+  }
+
+  .servicesBlock1,
+  .servicesBlock2,
+  .servicesBlock3,
+  .servicesBlock4 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .servicesContainer {
+    background: var(--gradient-bg4);
+    max-height: 200vh;
+  }
+  .blockInfo1,
+  .blockHead1,
+  .blockInfo2,
+  .blockHead2,
+  .blockInfo3,
+  .blockHead3,
+  .blockInfo4,
+  .blockHead4 {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .blockInfo1,
+  .blockInfo2,
+  .blockInfo3,
+  .blockInfo4 {
+    font-size: 14px;
+  }
+  .servicesBlock1 {
+    min-height: 350px;
+  }
+  .twoBlocksContainer {
+    display: block;
+    justify-content: space-between;
+    gap: 35px;
+  }
+  .blockInfo1,
+  .blockInfo2,
+  .blockInfo3,
+  .blockInfo4 {
+    margin-top: 10px;
+  }
 }

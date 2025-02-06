@@ -28,3 +28,16 @@
   font-size: 18px;
   font-weight: 600;
 }
+@media (min-width: 481px) and (max-width: 768px) {
+  .info_container {
+    height: 1200px;
+  }
+  .info_company_numbers {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+  .info_stat {
+    margin-top: 40px;
+  }
+}

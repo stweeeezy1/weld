@@ -1,11 +1,21 @@
 import styles from "/src/components/Header/Header.module.css";
+import { useState } from "react";
 
 export default function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <header className={styles.header_container}>
       <div className={styles.header}>
         <img src="/assets/logo.png" alt="Logo" className={styles.logo} />
-        <nav className={styles.nav}>
+        <div className={styles.menu_icon} onClick={toggleMenu}>
+          ☰
+        </div>
+        <nav className={`${styles.nav} ${isMenuOpen ? styles.nav_open : ""}`}>
           <ul>
             <li>Главная</li>
             <li>Услуги</li>
