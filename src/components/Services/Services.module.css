@@ -1,0 +1,80 @@
+.servicesContainer {
+  background: var(--gradient-bg4);
+  display: flex;
+  justify-content: center;
+  height: 1400px;
+}
+.servicesContainerMain {
+  width: 80%;
+}
+.servicesInfo h1 {
+  margin-top: 80px;
+  font-weight: 700;
+  font-size: 60px;
+  color: var(--color-text);
+}
+.servicesInfo p {
+  margin-top: 35px;
+  font-weight: 400;
+  font-size: 20px;
+  color: var(--color-text2);
+}
+
+.twoBlocksContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.servicesBlock1,
+.servicesBlock4 {
+  margin-top: 35px;
+  width: 100%;
+  height: 300px;
+  border-radius: 50px;
+  background: var(--gradient-bg2);
+  color: var(--color-text);
+  display: grid;
+}
+.servicesBlock2,
+.servicesBlock3 {
+  margin-top: 35px;
+  height: 300px;
+  width: calc(50% - 20px);
+  border-radius: 50px;
+  background: var(--gradient-bg2);
+  color: var(--color-text);
+  display: grid;
+}
+
+.blockHead1,
+.blockHead2,
+.blockHead3,
+.blockHead4 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-top: 40px;
+}
+.blockInfo1,
+.blockInfo4 {
+  margin-bottom: 50px;
+  font-size: 18px;
+  width: 1400px;
+  height: 135px;
+}
+.blockInfo2,
+.blockInfo3 {
+  margin-bottom: 120px;
+  font-size: 18px;
+  width: 700px;
+}
+.blockInfo1,
+.blockHead1,
+.blockInfo2,
+.blockHead2,
+.blockInfo3,
+.blockHead3,
+.blockInfo4,
+.blockHead4 {
+  margin-left: 60px;
+}

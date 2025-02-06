@@ -1,0 +1,30 @@
+.info_container {
+  height: 650px;
+  background: var(--color-bg);
+  display: flex;
+  justify-content: center;
+}
+.info_company {
+  width: 80%;
+}
+.info_company_text p {
+  margin-top: 150px;
+  font-size: 24px;
+  color: var(--color-text);
+}
+.info_company_numbers {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 150px;
+}
+.info_stat h1 {
+  color: var(--color-numbers);
+  font-size: 70px;
+  font-weight: 700;
+}
+.info_stat p {
+  margin-top: 20px;
+  color: var(--color-text2);
+  font-size: 18px;
+  font-weight: 600;
+}
