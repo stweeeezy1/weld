@@ -102,7 +102,7 @@
   margin-right: 150px;
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 1024px) {
   .menu_icon {
     display: block;
   }
@@ -168,4 +168,6 @@
   .header_container {
     height: 85vh;
   }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
 }

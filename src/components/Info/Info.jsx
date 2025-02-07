@@ -33,7 +33,7 @@ export default function Info() {
             </p>
           </div>
           <div className={styles.info_stat}>
-            <h1>10 000</h1>
+            <h1>10000</h1>
             <p>
               Обученных людей на базе <br /> собственных центров
             </p>

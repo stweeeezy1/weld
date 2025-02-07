@@ -41,3 +41,16 @@
     margin-top: 40px;
   }
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .info_container {
+    height: 800px;
+  }
+  .info_company_numbers {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+  .info_stat {
+    margin-top: 40px;
+  }
+}

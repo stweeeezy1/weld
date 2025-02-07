@@ -1,0 +1,9 @@
+.portfolio_container {
+  min-height: 750px;
+  background: var(--gradient-bg);
+  display: flex;
+  justify-content: center;
+}
+.portfolio_container_main {
+  width: 80%;
+}

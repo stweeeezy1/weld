@@ -1,77 +1,66 @@
 import styles from "./Services.module.css";
-import { servicesData } from "./data";
 
 export default function Services() {
   return (
-    <div className={styles.servicesContainer}>
-      <div className={styles.servicesContainerMain}>
-        <div className={styles.servicesInfo}>
-          <h1>{servicesData.title}</h1>
-          <p>{servicesData.description}</p>
-        </div>
+    <>
+      <div className={styles.servicesContainer}>
+        <div className={styles.servicesContainerMain}>
+          <div className={styles.servicesInfo}>
+            <h1>Наши услуги</h1>
+            <p>
+              Профессиональные сварочные и сантехнические услуги – качество,
+              надёжность, опыт!
+            </p>
+          </div>
 
-        {servicesData.blocks
-          .filter((block) => block.id === 1)
-          .map((block) => (
-            <div key={block.id} className={styles[`servicesBlock${block.id}`]}>
-              <p className={styles[`blockHead${block.id}`]}>{block.title}</p>
-              {Array.isArray(block.content) ? (
-                <p className={styles[`blockInfo${block.id}`]}>
-                  {block.content.map((item, index) => (
-                    <div key={`${block.id}-${index}`}>{item}</div>
-                  ))}
-                </p>
-              ) : (
-                <p className={styles[`blockInfo${block.id}`]}>
-                  {block.content}
-                </p>
-              )}
-            </div>
-          ))}
+          <div className={styles.servicesBlock1}>
+            <h2 className={styles.blockHead1}>Виды сварочных работ</h2>
+            <p className={styles.blockInfo1}>
+              Изготовление и монтаж металлоконструкций: лестницы, заборы,
+              каркасы для строительства и благоустройства. Виды сварки:
+              аргонодуговая, полуавтоматическая, электросварка для соединения
+              металлов с высокой точностью.
+            </p>
+          </div>
 
-        <div className={styles.twoBlocksContainer}>
-          {servicesData.blocks
-            .filter((block) => block.id === 2 || block.id === 3)
-            .map((block) => (
-              <div
-                key={block.id}
-                className={styles[`servicesBlock${block.id}`]}
-              >
-                <p className={styles[`blockHead${block.id}`]}>{block.title}</p>
-                {Array.isArray(block.content) ? (
-                  <p className={styles[`blockInfo${block.id}`]}>
-                    {block.content.map((item, index) => (
-                      <div key={`${block.id}-${index}`}>{item}</div>
-                    ))}
-                  </p>
-                ) : (
-                  <p className={styles[`blockInfo${block.id}`]}>
-                    {block.content}
-                  </p>
-                )}
+          <div className={styles.twoBlocksContainer}>
+            <div className={styles.servicesBlock2}>
+              <h2 className={styles.blockHead2}>Сантехнические работы</h2>
+              <div className={styles.blockInfo2}>
+                <p>Монтаж и ремонт водопровода, отопления, канализации.</p>
+                <p>Установка сантехники (краны, фильтры, тёплые полы).</p>
               </div>
-            ))}
-        </div>
-
-        {servicesData.blocks
-          .filter((block) => block.id === 4)
-          .map((block) => (
-            <div key={block.id} className={styles[`servicesBlock${block.id}`]}>
-              <p className={styles[`blockHead${block.id}`]}>{block.title}</p>
-              {Array.isArray(block.content) ? (
-                <p className={styles[`blockInfo${block.id}`]}>
-                  {block.content.map((item, index) => (
-                    <div key={`${block.id}-${index}`}>{item}</div>
-                  ))}
-                </p>
-              ) : (
-                <p className={styles[`blockInfo${block.id}`]}>
-                  {block.content}
-                </p>
-              )}
             </div>
-          ))}
+
+            <div className={styles.servicesBlock3}>
+              <h2 className={styles.blockHead3}>Обучение и консультации</h2>
+              <div className={styles.blockInfo3}>
+                <p>Курсы сварщика и сантехника (MMA, TIG, MIG/MAG).</p>
+                <p>Индивидуальные занятия и сертификация.</p>
+              </div>
+            </div>
+          </div>
+
+          <div className={styles.servicesBlock4}>
+            <h2 className={styles.blockHead4}>Дополнительно</h2>
+            <div className={styles.blockInfo4}>
+              <p>
+                Выездной сервис – выполнение сварочных и сантехнических работ на
+                объекте клиента.
+              </p>
+              <p>
+                Поставка материалов и оборудования – продажа и аренда сварочного
+                и сантехнического инструмента.
+              </p>
+              <p>
+                Гарантийное и постгарантийное обслуживание – контроль качества
+                сварных соединений и сантехнических систем.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+      <div className={styles.plus_bg}></div>
+    </>
   );
 }
