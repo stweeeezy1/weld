@@ -7,8 +7,12 @@ export default function Portfolio() {
         <div className={styles.portfolio_head}>
           <h1>Портфолио</h1>
         </div>
-        <div className={styles.portfolio_main}></div>
-        <div className={styles.courses_main_text}>
+        <div className={styles.portfolio_main}>
+          <div className={styles.portfolio_images}></div>
+          <div className={styles.portfolio_images}></div>
+          <div className={styles.portfolio_images}></div>
+        </div>
+        <div className={styles.portfolio_main_text}>
           <p>
             Мы предлагаем курсы по сварке и сантехнике, которые помогут вам
             освоить <br />

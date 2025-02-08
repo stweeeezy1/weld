@@ -1,0 +1,51 @@
+.quest_container {
+  min-height: 1000px;
+  background: var(--gradient-bg2);
+  display: flex;
+  justify-content: center;
+}
+.quest_main {
+  width: 80%;
+}
+.quest_header h1 {
+  margin-top: 200px;
+  font-size: 60px;
+  font-weight: 700;
+  color: var(--color-text);
+}
+.quest_header p {
+  margin-top: 35px;
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--color-text);
+}
+.quest_main button {
+  font-weight: 600;
+  font-size: 38px;
+  color: var(--color-text);
+  background: var(--gradient-btn);
+  border-radius: 50px;
+  width: 479px;
+  height: 110px;
+  border: none;
+  margin-top: 65px;
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(255, 127, 84, 0.8), 0 0 40px rgba(255, 138, 80, 0.6),
+    0 0 60px rgba(255, 149, 77, 0.4);
+  transition: box-shadow 0.5s ease-in-out;
+}
+
+.quest_main button:hover {
+  box-shadow: 0 0 30px rgba(255, 127, 84, 1), 0 0 40px rgba(255, 138, 80, 0.8),
+    0 0 70px rgba(255, 149, 77, 0.6);
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .quest_container {
+    height: 1000px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .info_container {
+    height: 800px;
+  }
+}
