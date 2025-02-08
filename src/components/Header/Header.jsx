@@ -8,6 +8,11 @@ export default function Header() {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const selectLanguage = (lang) => {
+    console.log("Выбранный язык:", lang);
+    setIsLangMenuOpen(false);
+  };
+
   return (
     <header className={styles.header_container}>
       <div className={styles.header}>
@@ -23,6 +28,11 @@ export default function Header() {
             <li>Портфолио</li>
             <li>Сотрудничать</li>
             <li>Контакты</li>
+          </ul>
+          <ul className={styles.lang}>
+            <li>EE</li>
+            <li>RU</li>
+            <li>ENG</li>
           </ul>
         </nav>
       </div>

@@ -66,6 +66,9 @@
   .courses_main_text li {
     margin-top: 10px;
   }
+  .courses_main {
+    width: 90%;
+  }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .info_container {
@@ -78,5 +81,8 @@
   }
   .info_stat {
     margin-top: 40px;
+  }
+  .courses_main {
+    width: 90%;
   }
 }

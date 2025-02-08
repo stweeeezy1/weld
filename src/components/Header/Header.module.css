@@ -22,7 +22,7 @@
 }
 
 .menu_icon {
-  display: none; /* Скрываем иконку на десктопах */
+  display: none;
   font-size: 30px;
   cursor: pointer;
 }
@@ -33,7 +33,6 @@
   padding: 0;
   list-style: none;
 }
-
 .nav li {
   cursor: pointer;
   font-size: 16px;
@@ -100,6 +99,13 @@
   width: 800px;
   margin-top: 208px;
   margin-right: 150px;
+}
+.nav .lang {
+  display: flex;
+  justify-content: end;
+}
+.nav .lang li {
+  margin-left: 10px;
 }
 
 @media (min-width: 481px) and (max-width: 1024px) {
@@ -168,6 +174,4 @@
   .header_container {
     height: 85vh;
   }
-}
-@media (min-width: 768px) and (max-width: 1024px) {
 }

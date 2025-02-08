@@ -5,6 +5,7 @@ import Courses from "./components/courses/courses.jsx";
 import Portfolio from "./components/Portfolio/Portfolio.jsx";
 import Cooperation from "./components/cooperation/cooperation.jsx";
 import Quest from "./components/Quest/quest.jsx";
+import Footer from "./components/footer/footer.jsx";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
       <Portfolio />
       <Cooperation />
       <Quest />
+      <Footer />
     </div>
   );
 }
