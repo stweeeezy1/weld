@@ -1,45 +1,40 @@
 import styles from "/src/components/Portfolio/Portfolio.module.css";
+import { useLanguage } from "/src/useLanguage.js";
 
 export default function Portfolio() {
+  const { language, toggleLanguage, t } = useLanguage();
   return (
     <div className={styles.portfolio_container}>
       <div className={styles.portfolio_container_main}>
         <div className={styles.portfolio_head}>
-          <h1>Портфолио</h1>
+          <h1>{t("courses_portfolio")}</h1>
         </div>
         <div className={styles.portfolio_main}>
           <img
             className={styles.portfolio_images}
             src="./assets/first.jpg"
-            href="#"
+            href="House"
           ></img>
           <img
             className={styles.portfolio_images}
             src="./assets/second.jpg"
-            href="#"
+            href="products"
           ></img>
           <img
             className={styles.portfolio_images}
             src="./assets/third.jpg"
-            href="#"
+            href="products"
           ></img>
         </div>
         <div className={styles.portfolio_main_text}>
-          <p>
-            Мы предлагаем курсы по сварке и сантехнике, которые помогут вам
-            освоить <br />
-            <b>востребованные профессии и получить практические навыки.</b>
-          </p>
+          <p className={styles.portfolio_desc}>{t("courses_description")}</p>
           <ul>
-            <li>Курсы сварщика (MMA, TIG, MIG/MAG)</li>
-            <li>Курсы сантехника</li>
-            <li>Индивидуальные занятия</li>
-            <li>Сертификация по окончании курса</li>
+            <li>{t("courses_welding")}</li>
+            <li>{t("courses_plumbing")}</li>
+            <li>{t("courses_individual")}</li>
+            <li>{t("courses_certification")}</li>
           </ul>
-          <p>
-            Наши курсы рассчитаны как на <b>начинающих</b>, так и на
-            специалистов, желающих <b>повысить квалификацию.</b>
-          </p>
+          <p>{t("courses_audience")}</p>
         </div>
       </div>
     </div>

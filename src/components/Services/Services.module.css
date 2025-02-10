@@ -101,7 +101,7 @@
   }
   .servicesContainer {
     background: var(--gradient-bg4);
-    min-height: 170vh;
+    min-height: 190vh;
   }
   .blockInfo1,
   .blockHead1,
@@ -121,10 +121,10 @@
     font-size: 17px;
   }
   .servicesBlock1 {
-    min-height: 350px;
+    min-height: 450px;
   }
   .blockInfo1 {
-    margin-bottom: 100px;
+    margin-bottom: 200px;
   }
   .twoBlocksContainer {
     display: block;
@@ -140,6 +140,7 @@
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .servicesContainerMain {
+    min-height: 180vh;
     width: 90%;
   }
 

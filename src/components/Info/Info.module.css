@@ -38,7 +38,7 @@
 }
 @media (min-width: 481px) and (max-width: 768px) {
   .info_container {
-    height: 1200px;
+    height: 1400px;
   }
   .info_company_numbers {
     display: flex;
@@ -48,10 +48,16 @@
   .info_stat {
     margin-top: 40px;
   }
+  .info_company_text p {
+    width: 90%;
+  }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
+  .info_company_text p {
+    width: 90%;
+  }
   .info_container {
-    height: 1200px;
+    height: 1150px;
   }
   .info_company_numbers {
     display: flex;

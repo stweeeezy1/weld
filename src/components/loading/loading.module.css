@@ -1,0 +1,31 @@
+.loader {
+  height: 100vh;
+  background: var(--gradient-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.loader .dot {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  margin-bottom: 400px;
+  animation: bounce 0.3s infinite alternate;
+}
+.dot {
+  color: var(--color-bg);
+  opacity: 50%;
+  font-size: 13em;
+}
+@keyframes bounce {
+  to {
+    translate: 0 -0.5rem;
+  }
+}
+.loader .dot:nth-child(2) {
+  animation-delay: 70ms;
+}
+.loader .dot:nth-child(3) {
+  animation-delay: 140ms;
+}

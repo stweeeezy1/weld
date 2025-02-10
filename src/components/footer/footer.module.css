@@ -32,10 +32,14 @@
   margin-top: 35px;
 }
 @media (min-width: 481px) and (max-width: 1024px) {
+  .footer_container {
+    display: flex;
+    justify-content: center;
+  }
   .footer_main {
     margin-top: 200px;
     color: var(--color-text);
-    width: 90%;
+    width: 85%;
     display: flex;
     flex-wrap: wrap;
   }
