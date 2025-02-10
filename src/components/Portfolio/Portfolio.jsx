@@ -8,9 +8,21 @@ export default function Portfolio() {
           <h1>Портфолио</h1>
         </div>
         <div className={styles.portfolio_main}>
-          <div className={styles.portfolio_images}></div>
-          <div className={styles.portfolio_images}></div>
-          <div className={styles.portfolio_images}></div>
+          <img
+            className={styles.portfolio_images}
+            src="./assets/first.jpg"
+            href="#"
+          ></img>
+          <img
+            className={styles.portfolio_images}
+            src="./assets/second.jpg"
+            href="#"
+          ></img>
+          <img
+            className={styles.portfolio_images}
+            src="./assets/third.jpg"
+            href="#"
+          ></img>
         </div>
         <div className={styles.portfolio_main_text}>
           <p>

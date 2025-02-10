@@ -26,7 +26,6 @@
   font-size: 30px;
   cursor: pointer;
 }
-
 .nav ul {
   display: flex;
   margin: 0;
@@ -53,6 +52,18 @@
   align-items: center;
   width: 100%;
 }
+.lang {
+  background: none;
+  border-style: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-text);
+  transition: color 0.3s ease-in-out;
+}
+.lang:hover {
+  color: var(--color-text2);
+}
 
 .header_main_text {
   margin-left: 8%;
@@ -61,7 +72,7 @@
 
 .header_main_text h1 {
   font-weight: 900;
-  font-size: 60px;
+  font-size: 57px;
   color: var(--color-text);
   line-height: 1.2;
 }
@@ -138,6 +149,9 @@
 
   .nav li {
     margin: 15px 0;
+    color: var(--color-bg);
+  }
+  .lang {
     color: var(--color-bg);
   }
 

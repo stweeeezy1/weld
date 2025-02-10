@@ -30,7 +30,7 @@
 .servicesBlock4 {
   margin-top: 35px;
   width: 100%;
-  min-height: 200px;
+  min-height: 300px;
   border-radius: 50px;
   background: var(--gradient-bg2);
   color: var(--color-text);
@@ -101,7 +101,7 @@
   }
   .servicesContainer {
     background: var(--gradient-bg4);
-    min-height: 150vh;
+    min-height: 170vh;
   }
   .blockInfo1,
   .blockHead1,
@@ -121,7 +121,10 @@
     font-size: 17px;
   }
   .servicesBlock1 {
-    min-height: 200px;
+    min-height: 350px;
+  }
+  .blockInfo1 {
+    margin-bottom: 100px;
   }
   .twoBlocksContainer {
     display: block;
@@ -170,7 +173,7 @@
     font-size: 18px;
   }
   .servicesBlock1 {
-    min-height: 200px;
+    min-height: 350px;
   }
   .twoBlocksContainer {
     display: block;

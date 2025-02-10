@@ -11,9 +11,13 @@
   },
   "dependencies": {
     "@fontsource/montserrat": "^5.1.1",
+    "i18next": "^24.2.2",
+    "i18next-browser-languagedetector": "^8.0.2",
+    "i18next-http-backend": "^3.0.2",
     "montserrat": "^1.0.1",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-i18next": "^15.4.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.19.0",

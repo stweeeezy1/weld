@@ -1,31 +1,27 @@
 import styles from "/src/components/courses/courses.module.css";
+import { useLanguage } from "/src/useLanguage.js";
 
 export default function Courses() {
+  const { language, toggleLanguage, t } = useLanguage();
   return (
     <div className={styles.courses_container}>
       <div className={styles.courses_main}>
         <div className={styles.courses_header}>
-          <h1>Курсы</h1>
-          <h3>Профессиональное обучение сварщикам и сантехникам</h3>
+          <h1>{t("courses_main")}</h1>
+          <h3>{t("courses_title")}</h3>
         </div>
         <div className={styles.courses_main_text}>
-          <p>
-            Мы предлагаем курсы по сварке и сантехнике, которые помогут вам
-            освоить <br />
-            <b>востребованные профессии и получить практические навыки.</b>
-          </p>
+          <p>{t("courses_description1")}</p>
+          <p>{t("courses_description2")}</p>
           <ul>
-            <li>Курсы сварщика (MMA, TIG, MIG/MAG)</li>
-            <li>Курсы сантехника</li>
-            <li>Индивидуальные занятия</li>
-            <li>Сертификация по окончании курса</li>
+            <li>{t("courses_welding")}</li>
+            <li>{t("courses_plumbing")}</li>
+            <li>{t("courses_individual")}</li>
+            <li>{t("courses_certification")}</li>
           </ul>
-          <p>
-            Наши курсы рассчитаны как на <b>начинающих</b>, так и на
-            специалистов, желающих <b>повысить квалификацию.</b>
-          </p>
+          <p>{t("courses_audience")}</p>
         </div>
-        <button>Узнать больше</button>
+        <button>{t("courses_cta")}</button>
       </div>
     </div>
   );

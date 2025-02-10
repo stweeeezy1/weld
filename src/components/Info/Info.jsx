@@ -1,42 +1,34 @@
 import styles from "/src/components/Info/Info.module.css";
+import { useLanguage } from "/src/useLanguage.js";
 
 export default function Info() {
+  const { language, toggleLanguage, t } = useLanguage();
   return (
     <div className={styles.info_container}>
       <div className={styles.info_company}>
         <div className={styles.info_company_text}>
           <p>
-            <b>MethodX</b> – платформа для обучения и подготовки <br />
-            квалифицированных специалистов в сфере сварки и сантехнических{" "}
-            <br />
-            работ, а также предоставления профессиональных услуг.
+            <b>MethodX</b> {t("info")}
           </p>
         </div>
         <div className={styles.info_company_numbers}>
           <div className={styles.info_stat}>
             <h1>10</h1>
-            <p>
-              по различным направлениям
-              <br /> по сварке
-            </p>
+            <p>{t("welding_directions")}</p>
           </div>
           <div className={styles.info_stat}>
             <h1>20</h1>
-            <p>
-              Школ, в которых запущена <br /> сварка
-            </p>
+            <p>{t("schools_with_welding")}</p>
           </div>
           <div className={styles.info_stat}>
             <h1>100</h1>
-            <p>
-              Педагогов прошедших <br /> курсы повышения <br /> квалификации
-            </p>
+            <p>{t("qualified_teachers")}</p>
           </div>
           <div className={styles.info_stat}>
-            <h1>10000</h1>
-            <p>
-              Обученных людей на базе <br /> собственных центров
-            </p>
+            <div className={styles.info_forth}>
+              <h1>10000</h1>
+              <p>{t("trained_people")}</p>
+            </div>
           </div>
         </div>
       </div>
