@@ -2,7 +2,38 @@ import styles from "/src/components/Header/Header.module.css";
 import { useState } from "react";
 import { useLanguage } from "/src/useLanguage.js";
 import { useScrollToSection } from "/src/useScrollToSection";
+import { motion } from "framer-motion";
 
+const animation = {
+  hidden: {
+    x: -100,
+    opacity: 0,
+  },
+  visible: {
+    x: 0,
+    opacity: 1,
+  },
+};
+const animationp = {
+  hidden: {
+    x: -200,
+    opacity: 0,
+  },
+  visible: {
+    x: 0,
+    opacity: 1,
+  },
+};
+const animationb = {
+  hidden: {
+    y: 100,
+    opacity: 0,
+  },
+  visible: {
+    y: 0,
+    opacity: 1,
+  },
+};
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { language, toggleLanguage, t } = useLanguage();
@@ -12,7 +43,12 @@ export default function Header() {
     setIsMenuOpen(!isMenuOpen);
   };
   return (
-    <header id="home" className={styles.header_container}>
+    <motion.header
+      initial="hidden"
+      whileInView="visible"
+      id="home"
+      className={styles.header_container}
+    >
       <div className={styles.header}>
         <img src="/assets/logo.png" alt="Logo" className={styles.logo} />
         <div className={styles.menu_icon} onClick={toggleMenu}>
@@ -40,9 +76,15 @@ export default function Header() {
       </div>
       <div className={styles.header_main}>
         <div className={styles.header_main_text}>
-          <h1>{t("head_main")}</h1>
-          <h3>{t("head_second")}</h3>
-          <button>{t("head_button")}</button>
+          <motion.h1 variants={animation} transition={{ duration: 0.75 }}>
+            {t("head_main")}
+          </motion.h1>
+          <motion.h3 variants={animationp} transition={{ duration: 1 }}>
+            {t("head_second")}
+          </motion.h3>
+          <motion.button variants={animationb} transition={{ duration: 1.25 }}>
+            {t("head_button")}
+          </motion.button>
         </div>
         <img
           src="/assets/main.png"
@@ -50,6 +92,6 @@ export default function Header() {
           className={styles.header_main_image}
         />
       </div>
-    </header>
+    </motion.header>
   );
 }
