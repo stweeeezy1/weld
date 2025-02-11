@@ -1,16 +1,18 @@
 import styles from "/src/components/Header/Header.module.css";
 import { useState } from "react";
 import { useLanguage } from "/src/useLanguage.js";
+import { useScrollToSection } from "/src/useScrollToSection";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { language, toggleLanguage, t } = useLanguage();
+  const scrollToSection = useScrollToSection();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
   return (
-    <header className={styles.header_container}>
+    <header id="home" className={styles.header_container}>
       <div className={styles.header}>
         <img src="/assets/logo.png" alt="Logo" className={styles.logo} />
         <div className={styles.menu_icon} onClick={toggleMenu}>
@@ -18,12 +20,16 @@ export default function Header() {
         </div>
         <nav className={`${styles.nav} ${isMenuOpen ? styles.nav_open : ""}`}>
           <ul>
-            <li>{t("home")}</li>
-            <li>{t("services")}</li>
-            <li>{t("courses")}</li>
-            <li>{t("portfolio")}</li>
-            <li>{t("cooperate")}</li>
-            <li>{t("contacts")}</li>
+            <li onClick={() => scrollToSection("home")}>{t("home")}</li>
+            <li onClick={() => scrollToSection("services")}>{t("services")}</li>
+            <li onClick={() => scrollToSection("courses")}>{t("courses")}</li>
+            <li onClick={() => scrollToSection("portfolio")}>
+              {t("portfolio")}
+            </li>
+            <li onClick={() => scrollToSection("cooperate")}>
+              {t("cooperate")}
+            </li>
+            <li onClick={() => scrollToSection("contacts")}>{t("contacts")}</li>
             <li>
               <button onClick={toggleLanguage} className={styles.lang}>
                 {language}

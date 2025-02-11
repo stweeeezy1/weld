@@ -2,7 +2,7 @@ import styles from "/src/components/Quest/quest.module.css";
 
 export default function Quest() {
   return (
-    <div className={styles.quest_container}>
+    <div id="contacts" className={styles.quest_container}>
       <div className={styles.quest_main}>
         <div className={styles.quest_header}>
           <h1>

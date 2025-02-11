@@ -4,7 +4,7 @@ import { useLanguage } from "/src/useLanguage.js";
 export default function Portfolio() {
   const { language, toggleLanguage, t } = useLanguage();
   return (
-    <div className={styles.portfolio_container}>
+    <div id="portfolio" className={styles.portfolio_container}>
       <div className={styles.portfolio_container_main}>
         <div className={styles.portfolio_head}>
           <h1>{t("courses_portfolio")}</h1>

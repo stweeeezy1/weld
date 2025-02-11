@@ -5,7 +5,7 @@ export default function Services() {
   const { language, toggleLanguage, t } = useLanguage();
   return (
     <>
-      <div className={styles.servicesContainer}>
+      <div id="services" className={styles.servicesContainer}>
         <div className={styles.servicesContainerMain}>
           <div className={styles.servicesInfo}>
             <h1>{t("services_title")}</h1>

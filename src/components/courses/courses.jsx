@@ -4,7 +4,7 @@ import { useLanguage } from "/src/useLanguage.js";
 export default function Courses() {
   const { language, toggleLanguage, t } = useLanguage();
   return (
-    <div className={styles.courses_container}>
+    <div id="courses" className={styles.courses_container}>
       <div className={styles.courses_main}>
         <div className={styles.courses_header}>
           <h1>{t("courses_main")}</h1>

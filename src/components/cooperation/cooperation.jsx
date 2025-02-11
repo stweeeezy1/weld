@@ -2,7 +2,7 @@ import styles from "/src/components/cooperation/cooperation.module.css";
 
 export default function Cooperation() {
   return (
-    <div className={styles.cooperation_container}>
+    <div id="cooperate" className={styles.cooperation_container}>
       <div className={styles.cooperation_main}>
         <div className={styles.cooperation_header}>
           <h1>Сотрудничество</h1>
