@@ -2,38 +2,9 @@ import styles from "/src/components/Header/Header.module.css";
 import { useState } from "react";
 import { useLanguage } from "/src/useLanguage.js";
 import { useScrollToSection } from "/src/useScrollToSection";
+import { animation, animationp, animationb } from "/src/animation.js";
 import { motion } from "framer-motion";
 
-const animation = {
-  hidden: {
-    x: -100,
-    opacity: 0,
-  },
-  visible: {
-    x: 0,
-    opacity: 1,
-  },
-};
-const animationp = {
-  hidden: {
-    x: -200,
-    opacity: 0,
-  },
-  visible: {
-    x: 0,
-    opacity: 1,
-  },
-};
-const animationb = {
-  hidden: {
-    y: 100,
-    opacity: 0,
-  },
-  visible: {
-    y: 0,
-    opacity: 1,
-  },
-};
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { language, toggleLanguage, t } = useLanguage();

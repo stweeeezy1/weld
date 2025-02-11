@@ -1,48 +1,12 @@
 import styles from "./Services.module.css";
 import { useLanguage } from "/src/useLanguage.js";
 import { motion } from "framer-motion";
-
-const animationB1 = {
-  hidden: {
-    x: 200,
-    opacity: 0,
-  },
-  visible: {
-    x: 0,
-    opacity: 1,
-  },
-};
-const animationB2 = {
-  hidden: {
-    x: -100,
-    opacity: 0,
-  },
-  visible: {
-    x: 0,
-    opacity: 1,
-  },
-};
-const animationB3 = {
-  hidden: {
-    x: 200,
-    opacity: 0,
-  },
-  visible: {
-    x: 0,
-    opacity: 1,
-  },
-};
-const animationB4 = {
-  hidden: {
-    y: 200,
-    opacity: 0,
-  },
-  visible: {
-    y: 0,
-    opacity: 1,
-  },
-};
-
+import {
+  animationB1,
+  animationB2,
+  animationB3,
+  animationB4,
+} from "/src/animation.js";
 export default function Services() {
   const { language, toggleLanguage, t } = useLanguage();
   return (

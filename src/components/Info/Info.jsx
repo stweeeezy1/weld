@@ -2,16 +2,7 @@ import styles from "/src/components/Info/Info.module.css";
 import { useLanguage } from "/src/useLanguage.js";
 import { motion } from "framer-motion";
 
-const animationN = {
-  hidden: {
-    y: 150,
-    opacity: 0,
-  },
-  visible: {
-    y: 0,
-    opacity: 1,
-  },
-};
+import { animationN } from "/src/animation.js";
 
 export default function Info() {
   const { language, toggleLanguage, t } = useLanguage();
