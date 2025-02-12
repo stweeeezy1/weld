@@ -1,15 +1,25 @@
 import styles from "/src/components/courses/courses.module.css";
 import { useLanguage } from "/src/useLanguage.js";
+import { animation, animationN, animationb } from "/src/animation.js";
+import { motion } from "framer-motion";
 
 export default function Courses() {
   const { language, toggleLanguage, t } = useLanguage();
   return (
     <div id="courses" className={styles.courses_container}>
       <div className={styles.courses_main}>
-        <div className={styles.courses_header}>
-          <h1>{t("courses_main")}</h1>
-          <h3>{t("courses_title")}</h3>
-        </div>
+        <motion.div
+          className={styles.courses_header}
+          initial="hidden"
+          whileInView="visible"
+        >
+          <motion.h1 variants={animation} transition={{ duration: 0.75 }}>
+            {t("courses_main")}
+          </motion.h1>
+          <motion.h3 variants={animationN} transition={{ duration: 0.5 }}>
+            {t("courses_title")}
+          </motion.h3>
+        </motion.div>
         <div className={styles.courses_main_text}>
           <p>{t("courses_description1")}</p>
           <p>{t("courses_description2")}</p>
@@ -20,8 +30,17 @@ export default function Courses() {
             <li>{t("courses_certification")}</li>
           </ul>
           <p>{t("courses_audience")}</p>
+          <motion.button
+            initial="hidden"
+            whileInView="visible"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.8 }}
+            variants={animationb}
+            transition={{ duration: 0.75 }}
+          >
+            {t("courses_cta")}
+          </motion.button>
         </div>
-        <button>{t("courses_cta")}</button>
       </div>
     </div>
   );

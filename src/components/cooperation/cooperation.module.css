@@ -21,6 +21,7 @@
 }
 .cooperation_main_text {
   margin-top: 35px;
+  width: 80%;
 }
 .cooperation_main_text ul {
   margin: 20px;
@@ -84,5 +85,36 @@
   }
   .info_stat {
     margin-top: 40px;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .cooperation_container {
+    height: 150vh;
+  }
+  .cooperation_main_text ul {
+    margin: 40px;
+  }
+  .cooperation_main_text li {
+    margin-top: 10px;
+    font-size: 17px;
+  }
+  .cooperation_main {
+    width: 90%;
+  }
+  .cooperation_header h1 {
+    font-size: 32px;
+  }
+  .cooperation_header h3 {
+    font-size: 17px;
+  }
+  .cooperation_main_text p {
+    font-size: 17px;
+  }
+  .cooperation_main button {
+    font-size: 30px;
+    width: 300px;
+  }
+  .cooperation_main button {
+    margin-left: -11px;
   }
 }

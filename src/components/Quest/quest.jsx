@@ -1,26 +1,37 @@
 import styles from "/src/components/Quest/quest.module.css";
+import { animation, animationb } from "/src/animation.js";
+import { motion } from "framer-motion";
+import { useLanguage } from "/src/useLanguage.js";
 
 export default function Quest() {
+  const { t } = useLanguage();
+
   return (
     <div id="contacts" className={styles.quest_container}>
       <div className={styles.quest_main}>
         <div className={styles.quest_header}>
-          <h1>
-            Остались вопросы? <br /> Свяжитесь с нами
-          </h1>
-          <p>
-            Есть вопросы по сварочным или сантехническим работам? <br /> Нужна
-            консультация? <br /> <b>Наши специалисты готовы помочь!</b> <br />
-          </p>
-          <p>
-            Напишите или позвоните нам и мы свяжемся с вами в ближайшее время,
-            чтобы предоставить персональные рекомендации и помочь выбрать
-            услуги, которые подойдут именно вам. Доверьте свою задачу
-            профессионалам!
-          </p>
+          <motion.h1
+            initial="hidden"
+            whileInView="visible"
+            variants={animation}
+            transition={{ duration: 1 }}
+          >
+            {t("quest_first")}
+          </motion.h1>
+          <p>{t("quest_second")}</p>
+          <p>{t("quest_main")}</p>
         </div>
 
-        <button>Связаться</button>
+        <motion.button
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.8 }}
+          initial="hidden"
+          whileInView="visible"
+          variants={animationb}
+          transition={{ duration: 1 }}
+        >
+          {t("cooperate_button")}
+        </motion.button>
       </div>
     </div>
   );

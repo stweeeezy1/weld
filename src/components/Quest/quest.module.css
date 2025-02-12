@@ -9,12 +9,14 @@
 }
 .quest_header h1 {
   margin-top: 200px;
+  width: 50%;
   font-size: 60px;
   font-weight: 700;
   color: var(--color-text);
 }
 .quest_header p {
   margin-top: 35px;
+  width: 80%;
   font-size: 20px;
   font-weight: 400;
   color: var(--color-text);
@@ -47,5 +49,23 @@
 @media (min-width: 768px) and (max-width: 1024px) {
   .info_container {
     height: 800px;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .quest_container {
+    height: 130vh;
+  }
+  .quest_header h1 {
+    font-size: 32px;
+  }
+  .quest_header p {
+    font-size: 17px;
+  }
+  .quest_main button {
+    font-size: 30px;
+    width: 300px;
+  }
+  .quest_main button {
+    margin-left: -27px;
   }
 }

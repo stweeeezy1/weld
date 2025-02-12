@@ -1,33 +1,45 @@
 import styles from "/src/components/cooperation/cooperation.module.css";
+import { animation, animationb, animationN } from "/src/animation.js";
+import { motion } from "framer-motion";
+import { useLanguage } from "/src/useLanguage.js";
 
 export default function Cooperation() {
+  const { language, toggleLanguage, t } = useLanguage();
   return (
     <div id="cooperate" className={styles.cooperation_container}>
       <div className={styles.cooperation_main}>
-        <div className={styles.cooperation_header}>
-          <h1>Сотрудничество</h1>
-          <h3>Наладьте с нами долгосрочное партнерство</h3>
-        </div>
+        <motion.div
+          className={styles.cooperation_header}
+          initial="hidden"
+          whileInView="visible"
+        >
+          <motion.h1 variants={animation} transition={{ duration: 0.75 }}>
+            {t("cooperate_title")}
+          </motion.h1>
+          <motion.h3 variants={animationN} transition={{ duration: 0.75 }}>
+            {t("cooperate_description1")}
+          </motion.h3>
+        </motion.div>
         <div className={styles.cooperation_main_text}>
-          <p>
-            Мы предлагаем выгодное сотрудничество в области сварки и
-            сантехнических услуг. <br /> Если вы представляете компанию и
-            нуждаетесь в надежных партнерах <br /> для выполнения работ или
-            обучения сотрудников, мы готовы предложить вам:
-          </p>
+          <p>{t("cooperate_description2")}</p>
           <ul>
-            <li>Специальные условия для корпоративных клиентов</li>
-            <li>Выездной сервис и техническую поддержку</li>
-            <li>Поставка материалов и оборудования</li>
-            <li>
-              Профессиональные консультации по выбору и установке оборудования
-            </li>
+            <li>{t("cooperate_offer1")}</li>
+            <li>{t("cooperate_offer2")}</li>
+            <li>{t("cooperate_offer3")}</li>
+            <li>{t("cooperate_offer4")}</li>
           </ul>
-          <p>
-            Будем рады обсудить возможности <b>сотрудничества!</b>
-          </p>
+          <p>{t("cooperate_cta")}</p>
         </div>
-        <button>Связаться</button>
+        <motion.button
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.8 }}
+          initial="hidden"
+          whileInView="visible"
+          variants={animationb}
+          transition={{ duration: 1 }}
+        >
+          {t("cooperate_button")}
+        </motion.button>
       </div>
     </div>
   );

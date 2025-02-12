@@ -1,12 +1,7 @@
 import styles from "./Services.module.css";
 import { useLanguage } from "/src/useLanguage.js";
 import { motion } from "framer-motion";
-import {
-  animationB1,
-  animationB2,
-  animationB3,
-  animationB4,
-} from "/src/animation.js";
+import { animationB2, animationB4 } from "/src/animation.js";
 export default function Services() {
   const { language, toggleLanguage, t } = useLanguage();
   return (
@@ -21,7 +16,7 @@ export default function Services() {
           <motion.div
             initial="hidden"
             whileInView="visible"
-            variants={animationB1}
+            variants={animationB4}
             transition={{ duration: 1 }}
             className={styles.servicesBlock1}
           >
@@ -48,7 +43,7 @@ export default function Services() {
               initial="hidden"
               whileInView="visible"
               className={styles.servicesBlock3}
-              variants={animationB3}
+              variants={animationB2}
               transition={{ duration: 1.5 }}
             >
               <h2 className={styles.blockHead3}>{t("learn_title")}</h2>
@@ -64,7 +59,7 @@ export default function Services() {
             whileInView="visible"
             className={styles.servicesBlock4}
             variants={animationB4}
-            transition={{ duration: 1.75 }}
+            transition={{ duration: 1.25 }}
           >
             <h2 className={styles.blockHead4}>{t("extra_title")}</h2>
             <div className={styles.blockInfo4}>

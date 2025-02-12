@@ -1,5 +1,7 @@
 import styles from "/src/components/Portfolio/Portfolio.module.css";
 import { useLanguage } from "/src/useLanguage.js";
+import { animationB4, animationB2 } from "/src/animation.js";
+import { motion } from "framer-motion";
 
 export default function Portfolio() {
   const { language, toggleLanguage, t } = useLanguage();
@@ -9,23 +11,33 @@ export default function Portfolio() {
         <div className={styles.portfolio_head}>
           <h1>{t("courses_portfolio")}</h1>
         </div>
-        <div className={styles.portfolio_main}>
-          <img
+        <motion.div
+          className={styles.portfolio_main}
+          initial="hidden"
+          whileInView="visible"
+        >
+          <motion.img
+            variants={animationB2}
+            transition={{ duration: 1 }}
             className={styles.portfolio_images}
             src="./assets/first.jpg"
             href="House"
-          ></img>
-          <img
+          ></motion.img>
+          <motion.img
+            variants={animationB4}
+            transition={{ duration: 1 }}
             className={styles.portfolio_images}
             src="./assets/second.jpg"
             href="products"
-          ></img>
-          <img
+          ></motion.img>
+          <motion.img
+            variants={animationB2}
+            transition={{ duration: 1 }}
             className={styles.portfolio_images}
             src="./assets/third.jpg"
             href="products"
-          ></img>
-        </div>
+          ></motion.img>
+        </motion.div>
         <div className={styles.portfolio_main_text}>
           <p className={styles.portfolio_desc}>{t("courses_description")}</p>
           <ul>

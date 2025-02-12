@@ -1,15 +1,3 @@
-import { motion } from "framer-motion";
-
-export const animationB1 = {
-  hidden: {
-    x: 200,
-    opacity: 0,
-  },
-  visible: {
-    x: 0,
-    opacity: 1,
-  },
-};
 export const animationB2 = {
   hidden: {
     x: -100,
@@ -43,7 +31,7 @@ export const animationB4 = {
 
 export const animationN = {
   hidden: {
-    y: 150,
+    y: 100,
     opacity: 0,
   },
   visible: {

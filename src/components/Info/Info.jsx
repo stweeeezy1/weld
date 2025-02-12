@@ -1,11 +1,19 @@
+import { useState } from "react";
 import styles from "/src/components/Info/Info.module.css";
 import { useLanguage } from "/src/useLanguage.js";
 import { motion } from "framer-motion";
-
+import { useAnimatedNumber } from "/src/useAnimatedNumber.js";
 import { animationN } from "/src/animation.js";
 
 export default function Info() {
-  const { language, toggleLanguage, t } = useLanguage();
+  const { t } = useLanguage();
+  const [animationTrigger, setAnimationTrigger] = useState(0);
+
+  const weldingDirections = useAnimatedNumber(0, 10, 0.75, animationTrigger);
+  const schoolsWithWelding = useAnimatedNumber(0, 20, 1, animationTrigger);
+  const qualifiedTeachers = useAnimatedNumber(0, 100, 1.25, animationTrigger);
+  const trainedPeople = useAnimatedNumber(0, 10000, 1.5, animationTrigger);
+
   return (
     <div className={styles.info_container}>
       <div className={styles.info_company}>
@@ -18,40 +26,40 @@ export default function Info() {
           className={styles.info_company_numbers}
           initial="hidden"
           whileInView="visible"
+          viewport={{ amount: 0.2 }}
+          onViewportEnter={() => setAnimationTrigger((prev) => prev + 1)}
         >
+          <motion.div
+            className={styles.info_stat}
+            variants={animationN}
+            transition={{ duration: 0.5 }}
+          >
+            <motion.h1>{weldingDirections}</motion.h1>
+            <p>{t("welding_directions")}</p>
+          </motion.div>
           <motion.div
             className={styles.info_stat}
             variants={animationN}
             transition={{ duration: 0.75 }}
           >
-            <h1>10</h1>
-            <p>{t("welding_directions")}</p>
+            <motion.h1>{schoolsWithWelding}</motion.h1>
+            <p>{t("schools_with_welding")}</p>
           </motion.div>
           <motion.div
             className={styles.info_stat}
             variants={animationN}
             transition={{ duration: 1 }}
           >
-            <h1>20</h1>
-            <p>{t("schools_with_welding")}</p>
+            <motion.h1>{qualifiedTeachers}</motion.h1>
+            <p>{t("qualified_teachers")}</p>
           </motion.div>
           <motion.div
             className={styles.info_stat}
             variants={animationN}
             transition={{ duration: 1.25 }}
           >
-            <h1>100</h1>
-            <p>{t("qualified_teachers")}</p>
-          </motion.div>
-          <motion.div
-            className={styles.info_stat}
-            variants={animationN}
-            transition={{ duration: 1.5 }}
-          >
-            <div className={styles.info_forth}>
-              <h1>10000</h1>
-              <p>{t("trained_people")}</p>
-            </div>
+            <motion.h1>{trainedPeople}</motion.h1>
+            <p>{t("trained_people")}</p>
           </motion.div>
         </motion.div>
       </div>

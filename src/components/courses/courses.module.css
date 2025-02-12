@@ -32,6 +32,7 @@
   color: var(--color-text);
 }
 .courses_main_text p {
+  width: 70%;
   font-size: 20px;
   font-weight: 400;
   color: var(--color-text);
@@ -84,5 +85,23 @@
   }
   .courses_main {
     width: 90%;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .courses_container {
+    height: 1500px;
+  }
+  .courses_main_text ul {
+    margin: 40px;
+  }
+  .courses_main_text li {
+    margin-top: 10px;
+  }
+  .courses_main button {
+    width: 300px;
+    font-size: 26px;
+  }
+  .courses_main_text button {
+    margin-left: -28px;
   }
 }

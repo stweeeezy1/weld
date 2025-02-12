@@ -53,7 +53,12 @@ export default function Header() {
           <motion.h3 variants={animationp} transition={{ duration: 1 }}>
             {t("head_second")}
           </motion.h3>
-          <motion.button variants={animationb} transition={{ duration: 1.25 }}>
+          <motion.button
+            variants={animationb}
+            transition={{ duration: 1.25 }}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.8 }}
+          >
             {t("head_button")}
           </motion.button>
         </div>

@@ -39,5 +39,20 @@
   "courses_description1": "Pakume keevitus- ja torustikukursusi, mis aitavad teil",
   "courses_description2": "omandada nõutud erialad ja praktilised oskused.",
   "courses_audience1": "Meie kursused on mõeldud nii algajatele kui ka spetsialistidele,kes soovivad oma oskusi täiendada.",
-  "courses_portfolio": "Portfoolio"
+  "courses_portfolio": "Portfoolio",
+
+  "cooperate_title": "Koostöö",
+  "cooperate_description1": "Looge meiega pikaajaline partnerlus.",
+  "cooperate_description2": "Pakume kasulikku koostööd keevituse ja torutööde valdkonnas. Kui te esindate ettevõtet ja vajate usaldusväärseid partnereid tööde teostamiseks või töötajate koolitamiseks, oleme valmis teile pakkuma:",
+  "cooperate_offer1": "Eritingimused korporatiivklientidele",
+  "cooperate_offer2": "Väliteenus ja tehniline tugi",
+  "cooperate_offer3": "Materjalide ja seadmete tarnimine",
+  "cooperate_offer4": "Professionaalsed nõuanded seadmete valiku ja paigaldamise kohta",
+  "cooperate_cta": "Oleme rõõmsalt valmis arutama koostöövõimalusi!",
+  "cooperate_button": "Võta ühendust",
+  "quest_main": "Meie spetsialistid on valmis aitama! Kirjutage või helistage meile ja me võtame teiega peagi ühendust, et pakkuda isiklikke soovitusi ja aidata valida teenuseid, mis sobivad just teile. Usaldage oma ülesanne professionaalidele!",
+  "quest_first": "On küsimusi? Võtke meiega ühendust",
+  "quest_second": "Kas teil on küsimusi keevitus- või torutööde kohta? Vajate konsultatsiooni?",
+
+  "footer_text": "Kõik õigused kaitstud."
 }

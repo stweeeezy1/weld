@@ -1,5 +1,6 @@
 import React, { lazy, Suspense } from "react";
 import Loading from "./components/Loading/Loading.jsx";
+import { motion, useSpring, useScroll } from "motion/react";
 
 const Header = lazy(() => import("./components/Header/Header.jsx"));
 const Info = lazy(() => import("./components/Info/Info.jsx"));

@@ -14,7 +14,7 @@
 }
 .portfolio_images {
   margin: 10px;
-  max-width: 500px;
+  max-width: 550px;
   display: flex;
   flex-wrap: wrap;
   height: 400px;
@@ -92,5 +92,30 @@
     height: 300px;
     border-radius: 30px;
     margin-top: 35px;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .quest_container {
+    height: 200vh;
+  }
+  .portfolio_main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .portfolio_container_main {
+    width: 90%;
+  }
+  .portfolio_images {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 200px;
+    border-radius: 30px;
+    margin-top: 20px;
+  }
+  .portfolio_head h1 {
+    font-size: 45px;
   }
 }
