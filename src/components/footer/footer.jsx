@@ -9,7 +9,7 @@ export default function Footer() {
       <div className={styles.footer_main}>
         <div className={styles.footer_left_info}>
           <div className={styles.footer_left_left_info}>
-            <img src="./assets/logo.png" alt="#" />
+            <img src="/dist/assets/logo.png" alt="#" />
             <h3>©MethodX</h3>
             <p>
               informatsioon24.7@gmail.com <br />

@@ -21,21 +21,21 @@ export default function Portfolio() {
             variants={animationB2}
             transition={{ duration: 1 }}
             className={styles.portfolio_images}
-            src="./assets/first.jpg"
+            src="/dist/assets/first.jpg"
             href="House"
           ></motion.img>
           <motion.img
             variants={animationB4}
             transition={{ duration: 1 }}
             className={styles.portfolio_images}
-            src="./assets/second.jpg"
+            src="/dist/assets/second.jpg"
             href="products"
           ></motion.img>
           <motion.img
             variants={animationB2}
             transition={{ duration: 1 }}
             className={styles.portfolio_images}
-            src="./assets/third.jpg"
+            src="/dist/assets/third.jpg"
             href="products"
           ></motion.img>
         </motion.div>
