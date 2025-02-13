@@ -1,5 +1,5 @@
 .info_container {
-  height: 650px;
+  height: 700px;
   background: var(--color-bg);
   display: flex;
   justify-content: center;
@@ -38,37 +38,62 @@
 }
 @media (min-width: 481px) and (max-width: 768px) {
   .info_container {
-    height: 1400px;
+    min-height: 1100px;
   }
   .info_company_numbers {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     margin-top: 40px;
   }
   .info_stat {
+    width: 100%;
     margin-top: 40px;
   }
+  .info_stat h1 {
+    color: var(--color-numbers);
+    font-size: 50px;
+    font-weight: 700;
+  }
+  .info_stat p {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    font-size: 18px;
+  }
   .info_company_text p {
-    width: 90%;
+    width: 100%;
+    margin-top: 150px;
+    font-size: 20px;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  .info_company_text p {
-    width: 90%;
-  }
   .info_container {
-    height: 1150px;
+    min-height: 1100px;
   }
   .info_company_numbers {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     margin-top: 40px;
   }
   .info_stat {
+    width: 100%;
     margin-top: 40px;
   }
-  .info_forth {
-    margin-right: 0px;
+  .info_stat h1 {
+    color: var(--color-numbers);
+    font-size: 50px;
+    font-weight: 700;
+  }
+  .info_stat p {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    font-size: 18px;
+  }
+  .info_company_text p {
+    width: 100%;
+    margin-top: 150px;
+    font-size: 20px;
   }
 }
 @media (min-width: 320px) and (max-width: 480px) {
@@ -90,6 +115,8 @@
     font-weight: 700;
   }
   .info_stat p {
+    display: flex;
+    justify-content: flex-start;
     width: 100%;
     font-size: 16px;
   }

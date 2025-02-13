@@ -9,10 +9,10 @@ export default function Info() {
   const { t } = useLanguage();
   const [animationTrigger, setAnimationTrigger] = useState(0);
 
-  const weldingDirections = useAnimatedNumber(0, 10, 0.75, animationTrigger);
-  const schoolsWithWelding = useAnimatedNumber(0, 20, 1, animationTrigger);
-  const qualifiedTeachers = useAnimatedNumber(0, 100, 1.25, animationTrigger);
-  const trainedPeople = useAnimatedNumber(0, 10000, 1.5, animationTrigger);
+  const weldingDirections = useAnimatedNumber(0, 4, 0.75, animationTrigger);
+  const schoolsWithWelding = useAnimatedNumber(0, 5, 1, animationTrigger);
+  const qualifiedTeachers = useAnimatedNumber(0, 6, 1.25, animationTrigger);
+  const trainedPeople = useAnimatedNumber(0, 20, 1.5, animationTrigger);
 
   return (
     <div className={styles.info_container}>

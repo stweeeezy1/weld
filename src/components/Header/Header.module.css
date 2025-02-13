@@ -123,6 +123,9 @@
   .header_main {
     width: 90%;
   }
+  .header_main_image {
+    display: none;
+  }
   .menu_icon {
     display: block;
   }
@@ -188,9 +191,6 @@
     font-size: 32px;
   }
 
-  .header_main_image {
-    display: none;
-  }
   .header_container {
     height: 85vh;
   }

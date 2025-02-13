@@ -38,6 +38,11 @@
   font-weight: 700;
   color: var(--color-text);
 }
+.portfolio_head h3 {
+  margin-top: 35px;
+  font-weight: 500;
+  color: var(--color-text2);
+}
 .portfolio_main_text ul {
   margin: 20px;
   margin-left: 40px;
@@ -103,7 +108,12 @@
     flex-wrap: wrap;
     justify-content: center;
   }
-
+  .portfolio_main_text p {
+    font-size: 16px;
+  }
+  .portfolio_main_text li {
+    font-size: 16px;
+  }
   .portfolio_container_main {
     width: 90%;
   }
@@ -117,5 +127,25 @@
   }
   .portfolio_head h1 {
     font-size: 45px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1600px) {
+  .quest_container {
+    height: 1100px;
+  }
+  .portfolio_main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .portfolio_container_main {
+    width: 90%;
+  }
+  .portfolio_images {
+    width: 90%;
+    height: 300px;
+    border-radius: 30px;
+    margin-top: 35px;
   }
 }

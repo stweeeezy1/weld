@@ -5,17 +5,16 @@ export const useAnimatedNumber = (
   initialValue,
   targetValue,
   duration = null,
-  trigger // Новая зависимость для перезапуска
+  trigger
 ) => {
   const count = useMotionValue(initialValue);
-  const rounded = useTransform(count, (value) => Math.round(value));
+  const rounded = useTransform(count, (value) => Math.round(value) + "+");
 
   useEffect(() => {
-    // Сбрасываем значение к начальному перед анимацией
     count.set(initialValue);
     const controls = animate(count, targetValue, { duration });
     return () => controls.stop();
-  }, [trigger, count, targetValue, duration]); // Добавляем trigger в зависимости
+  }, [trigger, count, targetValue, duration]);
 
   return rounded;
 };

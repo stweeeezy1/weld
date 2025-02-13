@@ -55,6 +55,14 @@
     display: flex;
     flex-wrap: wrap;
   }
+  .footer_left_info {
+    display: block;
+  }
+  .footer_left_info iframe {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    width: 80%;
+  }
 }
 @media (min-width: 320px) and (max-width: 480px) {
   .footer_left_info {

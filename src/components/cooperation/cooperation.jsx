@@ -25,21 +25,22 @@ export default function Cooperation() {
           <ul>
             <li>{t("cooperate_offer1")}</li>
             <li>{t("cooperate_offer2")}</li>
-            <li>{t("cooperate_offer3")}</li>
             <li>{t("cooperate_offer4")}</li>
           </ul>
           <p>{t("cooperate_cta")}</p>
         </div>
-        <motion.button
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.8 }}
-          initial="hidden"
-          whileInView="visible"
-          variants={animationb}
-          transition={{ duration: 1 }}
-        >
-          {t("cooperate_button")}
-        </motion.button>
+        <a href="mailto:informatsioon24.7@gmail.com">
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.8 }}
+            initial="hidden"
+            whileInView="visible"
+            variants={animationb}
+            transition={{ duration: 1 }}
+          >
+            {t("cooperate_button")}
+          </motion.button>
+        </a>
       </div>
     </div>
   );

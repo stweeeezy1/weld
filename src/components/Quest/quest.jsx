@@ -21,17 +21,18 @@ export default function Quest() {
           <p>{t("quest_second")}</p>
           <p>{t("quest_main")}</p>
         </div>
-
-        <motion.button
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.8 }}
-          initial="hidden"
-          whileInView="visible"
-          variants={animationb}
-          transition={{ duration: 1 }}
-        >
-          {t("cooperate_button")}
-        </motion.button>
+        <a href="mailto:informatsioon24.7@gmail.com">
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.8 }}
+            initial="hidden"
+            whileInView="visible"
+            variants={animationb}
+            transition={{ duration: 1 }}
+          >
+            {t("cooperate_button")}
+          </motion.button>
+        </a>
       </div>
     </div>
   );

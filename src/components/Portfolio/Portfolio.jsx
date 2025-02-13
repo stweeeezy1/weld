@@ -10,6 +10,7 @@ export default function Portfolio() {
       <div className={styles.portfolio_container_main}>
         <div className={styles.portfolio_head}>
           <h1>{t("courses_portfolio")}</h1>
+          <h3>{t("courses_portfolio2")}</h3>
         </div>
         <motion.div
           className={styles.portfolio_main}
@@ -39,14 +40,14 @@ export default function Portfolio() {
           ></motion.img>
         </motion.div>
         <div className={styles.portfolio_main_text}>
-          <p className={styles.portfolio_desc}>{t("courses_description")}</p>
+          <p className={styles.portfolio_desc}>{t("portfolio_description")}</p>
+          <p className={styles.portfolio_desc}>{t("portfolio_description1")}</p>
           <ul>
-            <li>{t("courses_welding")}</li>
-            <li>{t("courses_plumbing")}</li>
-            <li>{t("courses_individual")}</li>
-            <li>{t("courses_certification")}</li>
+            <li>{t("portfolio_welding")}</li>
+            <li>{t("portfolio_plumbing")}</li>
+            <li>{t("portfolio_individual")}</li>
           </ul>
-          <p>{t("courses_audience")}</p>
+          <p>{t("portfolio_audience")}</p>
         </div>
       </div>
     </div>

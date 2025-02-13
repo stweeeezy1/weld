@@ -64,7 +64,6 @@ export default function Services() {
             <h2 className={styles.blockHead4}>{t("extra_title")}</h2>
             <div className={styles.blockInfo4}>
               <p>{t("extra_item1")}</p>
-              <p>{t("extra_item2")}</p>
               <p>{t("extra_item3")}</p>
             </div>
           </motion.div>
