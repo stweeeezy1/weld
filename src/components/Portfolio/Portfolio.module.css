@@ -99,7 +99,7 @@
     margin-top: 35px;
   }
 }
-@media (min-width: 320px) and (max-width: 480px) {
+@media (max-width: 480px) {
   .quest_container {
     height: 200vh;
   }
@@ -120,13 +120,13 @@
   .portfolio_images {
     display: flex;
     flex-direction: column;
-    width: 300px;
-    height: 200px;
+    width: 70%;
+    height: 40%;
     border-radius: 30px;
     margin-top: 20px;
   }
   .portfolio_head h1 {
-    font-size: 45px;
+    font-size: 3rem;
   }
 }
 @media (min-width: 1025px) and (max-width: 1600px) {

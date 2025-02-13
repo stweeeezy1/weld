@@ -99,6 +99,10 @@
   box-shadow: 0 0 20px rgba(255, 127, 84, 0.8), 0 0 40px rgba(255, 138, 80, 0.6),
     0 0 60px rgba(255, 149, 77, 0.4);
   transition: box-shadow 0.5s ease-in-out;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .header_main_text button:hover {
@@ -195,16 +199,16 @@
     height: 85vh;
   }
 }
-@media (min-width: 320px) and (max-width: 480px) {
+@media (max-width: 480px) {
   .menu_icon {
     display: block;
   }
   .logo {
-    max-width: 50px;
-    max-height: 50px;
+    max-width: 6vh;
+    max-height: 6vh;
   }
   .header_container {
-    min-height: 100vh;
+    min-height: 120vh;
   }
 
   .nav {
@@ -212,8 +216,8 @@
     display: none;
     position: absolute;
     top: 50px;
-    left: 100px;
-    width: 70%;
+    left: 13vh;
+    width: 60%;
     background: var(--color-text);
     flex-direction: column;
     align-items: center;
@@ -261,9 +265,16 @@
   }
 
   .header_main_text button {
-    max-width: 300px;
-    height: 90px;
-    font-size: 28px;
+    width: 90%;
+    max-width: 350px;
+    height: auto;
+    padding: 4vw 8vw;
+    font-size: clamp(16px, 4.5vw, 24px);
+    margin-top: 8vw;
+    border-radius: 8vw;
+  }
+  .header_main_text button:hover {
+    box-shadow: 0 0 15px rgba(255, 127, 84, 0.8);
   }
 
   .header_main_image {

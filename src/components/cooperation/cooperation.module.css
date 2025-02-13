@@ -91,31 +91,31 @@
     margin-top: 40px;
   }
 }
-@media (min-width: 320px) and (max-width: 480px) {
+@media (max-width: 480px) {
   .cooperation_container {
-    height: 150vh;
+    height: 160vh;
   }
   .cooperation_main_text ul {
     margin: 40px;
   }
   .cooperation_main_text li {
     margin-top: 10px;
-    font-size: 17px;
+    font-size: 0.9rem;
   }
   .cooperation_main {
     width: 90%;
   }
   .cooperation_header h1 {
-    font-size: 45px;
+    font-size: 2rem;
   }
   .cooperation_header h3 {
-    font-size: 20px;
+    font-size: 1rem;
   }
   .cooperation_main_text p {
-    font-size: 17px;
+    font-size: 0.9rem;
   }
   .cooperation_main button {
-    font-size: 30px;
-    width: 80%;
+    font-size: 1.75rem;
+    width: 90%;
   }
 }

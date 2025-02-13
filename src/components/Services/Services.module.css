@@ -141,18 +141,10 @@
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .servicesContainerMain {
-    min-height: 180vh;
+    min-height: 150vh;
     width: 90%;
   }
 
-  .servicesBlock1,
-  .servicesBlock2,
-  .servicesBlock3,
-  .servicesBlock4 {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-  }
   .servicesContainer {
     background: var(--gradient-bg4);
     min-height: 150vh;
@@ -177,6 +169,9 @@
   .servicesBlock1 {
     min-height: 350px;
   }
+  .servicesBlock4 {
+    margin-bottom: 100px;
+  }
   .twoBlocksContainer {
     display: block;
     justify-content: space-between;
@@ -189,7 +184,7 @@
     margin-top: 10px;
   }
 }
-@media (min-width: 320px) and (max-width: 480px) {
+@media (max-width: 480px) {
   .servicesContainerMain {
     min-height: 170vh;
     width: 90%;
@@ -225,17 +220,18 @@
     font-size: 15px;
   }
   .servicesBlock1 {
-    min-height: 270px;
+    min-height: 20vh;
   }
   .servicesBlock2 {
-    min-height: 270px;
+    min-height: 40vh;
   }
   .servicesBlock3 {
-    min-height: 270px;
+    min-height: 30vh;
   }
 
   .servicesBlock4 {
-    min-height: 100px;
+    min-height: 30vh;
+    margin-bottom: 10vh;
   }
   .twoBlocksContainer {
     display: block;
@@ -254,8 +250,8 @@
     width: 90%;
   }
   .servicesContainer {
-    background: var(--gradient-bg4);
-    min-height: 140vh;
+    min-height: 160vh;
+    width: 90%;
   }
   .blockInfo1,
   .blockHead1,
@@ -285,11 +281,5 @@
   .blockInfo3,
   .blockInfo4 {
     margin-top: 10px;
-  }
-}
-@media (min-width: 1025px) and (max-width: 1600px) {
-  .servicesContainerMain {
-    min-height: 160vh;
-    width: 90%;
   }
 }
