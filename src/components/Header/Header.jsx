@@ -4,6 +4,8 @@ import { useLanguage } from "/src/useLanguage.js";
 import { useScrollToSection } from "/src/useScrollToSection";
 import { animation, animationp, animationb } from "/src/animation.js";
 import { motion } from "framer-motion";
+import logo from "/src/assets/logo.png";
+import mainImg from "/src/assets/main.png";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,7 +23,7 @@ export default function Header() {
       className={styles.header_container}
     >
       <div className={styles.header}>
-        <img src="/src/assets/logo.png" alt="Logo" className={styles.logo} />
+        <img src={logo} alt="Logo" className={styles.logo} />
         <div className={styles.menu_icon} onClick={toggleMenu}>
           ☰
         </div>
@@ -64,11 +66,7 @@ export default function Header() {
             </motion.button>
           </a>
         </div>
-        <img
-          src="/src/assets/main.png"
-          alt="main"
-          className={styles.header_main_image}
-        />
+        <img src={mainImg} alt="main" className={styles.header_main_image} />
       </div>
     </motion.header>
   );

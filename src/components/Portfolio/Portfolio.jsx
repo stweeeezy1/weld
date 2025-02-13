@@ -2,6 +2,9 @@ import styles from "/src/components/Portfolio/Portfolio.module.css";
 import { useLanguage } from "/src/useLanguage.js";
 import { animationB4, animationB2 } from "/src/animation.js";
 import { motion } from "framer-motion";
+import image1 from "/src/assets/first.jpg";
+import image2 from "/src/assets/second.jpg";
+import image3 from "/src/assets/third.jpg";
 
 export default function Portfolio() {
   const { language, toggleLanguage, t } = useLanguage();
@@ -21,21 +24,21 @@ export default function Portfolio() {
             variants={animationB2}
             transition={{ duration: 1 }}
             className={styles.portfolio_images}
-            src="/src/assets/first.jpg"
+            src={image1}
             href="House"
           ></motion.img>
           <motion.img
             variants={animationB4}
             transition={{ duration: 1 }}
             className={styles.portfolio_images}
-            src="/src/assets/second.jpg"
+            src={image2}
             href="products"
           ></motion.img>
           <motion.img
             variants={animationB2}
             transition={{ duration: 1 }}
             className={styles.portfolio_images}
-            src="/src/assets/third.jpg"
+            src={image3}
             href="products"
           ></motion.img>
         </motion.div>
