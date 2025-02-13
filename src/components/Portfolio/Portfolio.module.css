@@ -86,7 +86,7 @@
   .portfolio_main {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
   }
 
   .portfolio_container_main {
@@ -106,7 +106,7 @@
   .portfolio_main {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
   }
   .portfolio_main_text p {
     font-size: 16px;

@@ -45,6 +45,10 @@
   .quest_container {
     height: 1000px;
   }
+  .quest_main button {
+    font-size: 32px;
+    max-width: 80%;
+  }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .info_container {
@@ -56,16 +60,13 @@
     height: 130vh;
   }
   .quest_header h1 {
-    font-size: 32px;
+    font-size: 45px;
   }
   .quest_header p {
     font-size: 17px;
   }
   .quest_main button {
     font-size: 30px;
-    width: 300px;
-  }
-  .quest_main button {
-    margin-left: -27px;
+    max-width: 80%;
   }
 }

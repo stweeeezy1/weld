@@ -73,6 +73,10 @@
   .cooperation_header h1 {
     font-size: 55px;
   }
+  .cooperation_main button {
+    font-size: 34px;
+    width: 80%;
+  }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .info_container {
@@ -102,19 +106,16 @@
     width: 90%;
   }
   .cooperation_header h1 {
-    font-size: 32px;
+    font-size: 45px;
   }
   .cooperation_header h3 {
-    font-size: 17px;
+    font-size: 20px;
   }
   .cooperation_main_text p {
     font-size: 17px;
   }
   .cooperation_main button {
     font-size: 30px;
-    width: 300px;
-  }
-  .cooperation_main button {
-    margin-left: -11px;
+    width: 80%;
   }
 }

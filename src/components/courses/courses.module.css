@@ -70,6 +70,10 @@
   .courses_main {
     width: 90%;
   }
+  .courses_main button {
+    width: 80%;
+    font-size: 32px;
+  }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .courses_container {
@@ -96,10 +100,13 @@
     margin-top: 10px;
   }
   .courses_main button {
-    width: 300px;
-    font-size: 26px;
+    width: 80%;
+    font-size: 30px;
   }
-  .courses_main_text button {
-    margin-left: -28px;
+  .courses_header h1 {
+    font-size: 45px;
+  }
+  .courses_header h3 {
+    font-size: 20px;
   }
 }

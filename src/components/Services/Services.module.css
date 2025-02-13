@@ -191,6 +191,7 @@
 }
 @media (min-width: 320px) and (max-width: 480px) {
   .servicesContainerMain {
+    min-height: 170vh;
     width: 90%;
   }
 
@@ -199,12 +200,6 @@
   .servicesBlock3,
   .servicesBlock4 {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .servicesContainer {
-    background: var(--gradient-bg4);
-    min-height: 200vh;
   }
   .blockInfo1,
   .blockHead1,
@@ -230,17 +225,17 @@
     font-size: 15px;
   }
   .servicesBlock1 {
-    min-height: 370px;
+    min-height: 270px;
   }
   .servicesBlock2 {
-    min-height: 400px;
+    min-height: 270px;
   }
   .servicesBlock3 {
-    min-height: 300px;
+    min-height: 270px;
   }
 
   .servicesBlock4 {
-    min-height: 125px;
+    min-height: 100px;
   }
   .twoBlocksContainer {
     display: block;
@@ -251,7 +246,7 @@
   .blockInfo2,
   .blockInfo3,
   .blockInfo4 {
-    margin-top: 10px;
+    margin-top: 15px;
   }
 }
 @media (min-width: 1025px) and (max-width: 1529px) {
