@@ -21,11 +21,7 @@ export default function Header() {
       className={styles.header_container}
     >
       <div className={styles.header}>
-        <img
-          src="/public/locales/assets/logo.png"
-          alt="Logo"
-          className={styles.logo}
-        />
+        <img src="/src/assets/logo.png" alt="Logo" className={styles.logo} />
         <div className={styles.menu_icon} onClick={toggleMenu}>
           ☰
         </div>
@@ -69,7 +65,7 @@ export default function Header() {
           </a>
         </div>
         <img
-          src="/public/locales/assets/main.png"
+          src="/src/assets/main.png"
           alt="main"
           className={styles.header_main_image}
         />
