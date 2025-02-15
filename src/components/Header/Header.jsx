@@ -19,6 +19,7 @@ export default function Header() {
     <motion.header
       initial="hidden"
       whileInView="visible"
+      viewport={{ once: true, margin: "0px 0px -50px 0px" }}
       id="home"
       className={styles.header_container}
     >

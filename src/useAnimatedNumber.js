@@ -1,20 +1,24 @@
-import { motion, useMotionValue, useTransform, animate } from "framer-motion";
+import { motionValue, useTransform, animate } from "framer-motion";
 import { useEffect } from "react";
 
 export const useAnimatedNumber = (
   initialValue,
   targetValue,
-  duration = null,
-  trigger
+  duration = 1,
+  shouldAnimate
 ) => {
-  const count = useMotionValue(initialValue);
-  const rounded = useTransform(count, (value) => Math.round(value) + "+");
+  const count = motionValue(initialValue);
+  const rounded = useTransform(count, (value) => Math.round(value));
 
   useEffect(() => {
-    count.set(initialValue);
-    const controls = animate(count, targetValue, { duration });
-    return () => controls.stop();
-  }, [trigger, count, targetValue, duration]);
+    if (shouldAnimate) {
+      const controls = animate(count, targetValue, {
+        duration: duration,
+        type: "tween",
+      });
+      return () => controls.stop();
+    }
+  }, [shouldAnimate, count, targetValue, duration]);
 
   return rounded;
 };

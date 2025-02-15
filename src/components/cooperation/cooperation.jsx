@@ -12,6 +12,7 @@ export default function Cooperation() {
           className={styles.cooperation_header}
           initial="hidden"
           whileInView="visible"
+          viewport={{ once: true, margin: "0px 0px -50px 0px" }}
         >
           <motion.h1 variants={animation} transition={{ duration: 0.75 }}>
             {t("cooperate_title")}
@@ -31,6 +32,7 @@ export default function Cooperation() {
         </div>
         <a href="mailto:informatsioon24.7@gmail.com">
           <motion.button
+            viewport={{ once: true, margin: "0px 0px -50px 0px" }}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.8 }}
             initial="hidden"

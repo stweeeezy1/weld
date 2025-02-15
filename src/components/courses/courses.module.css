@@ -1,5 +1,5 @@
 .courses_container {
-  min-height: 750px;
+  max-height: 130vh;
   background: var(--color-bg);
   display: flex;
   justify-content: center;
@@ -108,5 +108,30 @@
   }
   .courses_header h3 {
     font-size: 20px;
+  }
+}
+@media (min-height: 840px) {
+  .courses_container {
+    min-height: 90vh;
+  }
+}
+@media (max-height: 840px) {
+  .courses_container {
+    max-height: 140vh;
+  }
+}
+@media (max-height: 710px) {
+  .courses_container {
+    max-height: 160vh;
+  }
+}
+@media (max-height: 620px) {
+  .courses_container {
+    max-height: 180vh;
+  }
+}
+@media (max-height: 550px) {
+  .courses_container {
+    max-height: 200vh;
   }
 }

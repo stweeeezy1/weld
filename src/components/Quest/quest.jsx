@@ -13,6 +13,7 @@ export default function Quest() {
           <motion.h1
             initial="hidden"
             whileInView="visible"
+            viewport={{ once: true, margin: "0px 0px -50px 0px" }}
             variants={animation}
             transition={{ duration: 1 }}
           >
@@ -27,6 +28,7 @@ export default function Quest() {
             whileTap={{ scale: 0.8 }}
             initial="hidden"
             whileInView="visible"
+            viewport={{ once: true, margin: "0px 0px -50px 0px" }}
             variants={animationb}
             transition={{ duration: 1 }}
           >

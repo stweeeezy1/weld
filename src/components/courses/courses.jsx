@@ -12,6 +12,7 @@ export default function Courses() {
           className={styles.courses_header}
           initial="hidden"
           whileInView="visible"
+          viewport={{ once: true, margin: "0px 0px -50px 0px" }}
         >
           <motion.h1 variants={animation} transition={{ duration: 0.75 }}>
             {t("courses_main")}
@@ -34,6 +35,7 @@ export default function Courses() {
             <motion.button
               initial="hidden"
               whileInView="visible"
+              viewport={{ once: true, margin: "0px 0px -50px 0px" }}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.8 }}
               variants={animationb}

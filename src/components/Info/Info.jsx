@@ -7,12 +7,12 @@ import { animationN } from "/src/animation.js";
 
 export default function Info() {
   const { t } = useLanguage();
-  const [animationTrigger, setAnimationTrigger] = useState(0);
+  const [hasAnimated, setHasAnimated] = useState(false);
 
-  const weldingDirections = useAnimatedNumber(0, 4, 0.75, animationTrigger);
-  const schoolsWithWelding = useAnimatedNumber(0, 5, 1, animationTrigger);
-  const qualifiedTeachers = useAnimatedNumber(0, 6, 1.25, animationTrigger);
-  const trainedPeople = useAnimatedNumber(0, 20, 1.5, animationTrigger);
+  const weldingDirections = useAnimatedNumber(0, 4, 0.75, hasAnimated);
+  const schoolsWithWelding = useAnimatedNumber(0, 5, 1, hasAnimated);
+  const qualifiedTeachers = useAnimatedNumber(0, 6, 1.25, hasAnimated);
+  const trainedPeople = useAnimatedNumber(0, 20, 1.5, hasAnimated);
 
   return (
     <div className={styles.info_container}>
@@ -26,8 +26,8 @@ export default function Info() {
           className={styles.info_company_numbers}
           initial="hidden"
           whileInView="visible"
-          viewport={{ amount: 0.2 }}
-          onViewportEnter={() => setAnimationTrigger((prev) => prev + 1)}
+          viewport={{ once: true, margin: "0px 0px -50px 0px", amount: 0.2 }}
+          onViewportEnter={() => !hasAnimated && setHasAnimated(true)}
         >
           <motion.div
             className={styles.info_stat}

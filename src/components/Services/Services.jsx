@@ -16,6 +16,7 @@ export default function Services() {
           <motion.div
             initial="hidden"
             whileInView="visible"
+            viewport={{ once: true, margin: "0px 0px -50px 0px" }}
             variants={animationB4}
             transition={{ duration: 1 }}
             className={styles.servicesBlock1}
@@ -28,6 +29,7 @@ export default function Services() {
             <motion.div
               initial="hidden"
               whileInView="visible"
+              viewport={{ once: true, margin: "0px 0px -50px 0px" }}
               className={styles.servicesBlock2}
               variants={animationB2}
               transition={{ duration: 1.25 }}
@@ -42,6 +44,7 @@ export default function Services() {
             <motion.div
               initial="hidden"
               whileInView="visible"
+              viewport={{ once: true, margin: "0px 0px -50px 0px" }}
               className={styles.servicesBlock3}
               variants={animationB2}
               transition={{ duration: 1.5 }}
@@ -57,6 +60,7 @@ export default function Services() {
           <motion.div
             initial="hidden"
             whileInView="visible"
+            viewport={{ once: true, margin: "0px 0px -50px 0px" }}
             className={styles.servicesBlock4}
             variants={animationB4}
             transition={{ duration: 1.25 }}

@@ -13,12 +13,12 @@ export default function Portfolio() {
       <div className={styles.portfolio_container_main}>
         <div className={styles.portfolio_head}>
           <h1>{t("courses_portfolio")}</h1>
-          <h3>{t("courses_portfolio2")}</h3>
         </div>
         <motion.div
           className={styles.portfolio_main}
           initial="hidden"
           whileInView="visible"
+          viewport={{ once: true, margin: "0px 0px -50px 0px" }}
         >
           <motion.img
             variants={animationB2}
