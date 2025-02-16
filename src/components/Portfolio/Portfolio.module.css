@@ -129,7 +129,7 @@
     font-size: 3rem;
   }
 }
-@media (min-width: 1025px) and (max-width: 1600px) {
+@media (min-width: 1025px) {
   .quest_container {
     height: 1100px;
   }

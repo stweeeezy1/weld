@@ -134,11 +134,11 @@
     display: none;
   }
   .logo {
-    width: 5vh;
-    height: 5vh;
+    width: 8vh;
+    height: 8vh;
   }
   .header_container {
-    min-height: 100vh;
+    min-height: 140vh;
     height: auto;
   }
   .lang {
@@ -162,11 +162,11 @@
 
   .header_main_text h3 {
     font-size: 2em;
-    margin-top: 3vh;
+    margin-top: 8vh;
   }
 
   .header_main_text button {
-    margin-top: 3vh;
+    margin-top: 8vh;
     max-width: 60%;
     height: 100px;
     font-size: 32px;
@@ -174,6 +174,33 @@
 
   .header_container {
     height: 70vh;
+  }
+  .nav {
+    border-radius: 20px;
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 80%;
+    width: 20%;
+    background: var(--color-text);
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav.nav_open {
+    display: flex;
+  }
+
+  .nav ul {
+    flex-direction: column;
+  }
+
+  .nav li {
+    margin: 15px 0;
+    color: var(--color-bg);
+  }
+  .menu_icon {
+    display: block;
   }
 }
 
