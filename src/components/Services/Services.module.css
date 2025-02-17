@@ -59,7 +59,6 @@
 .blockInfo1,
 .blockInfo4 {
   margin-top: 35px;
-  margin-bottom: 50px;
   font-size: 22px;
   width: 1400px;
   height: 135px;
@@ -305,6 +304,13 @@
   .servicesBlock4 {
     padding: 1rem 0;
   }
+  .servicesBlock2{
+    min-height: 70vh;
+  }
+  .servicesBlock3{
+    min-height: 50vh;
+  }
+  
 }
 
 @media (min-height: 1000px) {
@@ -318,7 +324,6 @@
   }
 }
 
-/* Вертикальные устройства */
 @media (max-aspect-ratio: 0.75) {
   .servicesContainer {
     min-height: 120dvh;

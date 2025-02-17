@@ -115,7 +115,8 @@
     font-size: 0.9rem;
   }
   .cooperation_main button {
-    font-size: 1.75rem;
     width: 90%;
+    font-size: 1.2rem;
+    max-height: 20vh;
   }
 }
