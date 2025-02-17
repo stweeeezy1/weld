@@ -57,7 +57,7 @@
 }
 @media (max-width: 480px) {
   .quest_container {
-    height: 120vh;
+    height: 90vh;
   }
   .quest_header h1 {
     font-size: 2em;

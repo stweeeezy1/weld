@@ -24,7 +24,7 @@ export default function Services() {
             <h2 className={styles.blockHead1}>{t("welding_title")}</h2>
             <p className={styles.blockInfo1}>{t("welding_item")}</p>
           </motion.div>
-
+          <hr className={styles.service_line} />
           <div className={styles.twoBlocksContainer}>
             <motion.div
               initial="hidden"
@@ -40,6 +40,7 @@ export default function Services() {
                 <p>{t("pipe_item2")}</p>
               </div>
             </motion.div>
+            <hr className={styles.service_line} />
 
             <motion.div
               initial="hidden"
@@ -56,6 +57,7 @@ export default function Services() {
               </div>
             </motion.div>
           </div>
+          <hr className={styles.service_line} />
 
           <motion.div
             initial="hidden"

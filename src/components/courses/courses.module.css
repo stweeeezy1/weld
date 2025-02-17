@@ -134,22 +134,22 @@
 }
 @media (max-height: 840px) {
   .courses_container {
-    max-height: 140vh;
+    max-height: 170vh;
   }
 }
 @media (max-height: 710px) {
   .courses_container {
-    max-height: 160vh;
+    max-height: 220vh;
   }
 }
 @media (max-height: 620px) {
   .courses_container {
-    max-height: 200vh;
+    max-height: 220vh;
   }
 }
 @media (max-height: 550px) {
   .courses_container {
-    min-height: 290vh;
+    max-height: 310vh;
   }
   .courses_main button {
     margin-bottom: 10vh;
