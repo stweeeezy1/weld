@@ -24,7 +24,7 @@
 .servicesBlock4 {
   margin-top: 35px;
   width: 100%;
-  min-height: 300px;
+  min-height: 25vh;
   border-radius: 50px;
   background: var(--gradient-bg2);
   color: var(--color-text);
@@ -36,7 +36,7 @@
 }
 .servicesBlock2,
 .servicesBlock3 {
-  height: 220px;
+  height: 25vh;
   margin-top: 35px;
   max-height: 400px;
   border-radius: 50px;
@@ -275,13 +275,13 @@
     font-size: 15px;
   }
   .servicesBlock1 {
-    max-height: 30vh;
+    max-height: 40vh;
   }
   .servicesBlock2 {
-    min-height: 50vh;
+    min-height: 45vh;
   }
   .servicesBlock3 {
-    max-height: 500px;
+    min-height: 30vh;
   }
   .servicesBlock4 {
     max-height: 30vh;
@@ -304,13 +304,12 @@
   .servicesBlock4 {
     padding: 1rem 0;
   }
-  .servicesBlock2{
+  .servicesBlock2 {
     min-height: 70vh;
   }
-  .servicesBlock3{
+  .servicesBlock3 {
     min-height: 50vh;
   }
-  
 }
 
 @media (min-height: 1000px) {

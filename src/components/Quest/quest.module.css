@@ -57,22 +57,22 @@
 }
 @media (max-width: 480px) {
   .quest_container {
-    height: 140vh;
+    height: 120vh;
   }
   .quest_header h1 {
-    font-size: 45px;
+    font-size: 2em;
   }
   .quest_header p {
-    font-size: 17px;
+    font-size: 0.9em;
   }
   .quest_main button {
     font-size: 1.2rem;
-    max-height: 20vh;
+    max-height: 10vh;
     max-width: 90%;
   }
 }
 
-@media (max-height:600px){
+@media (max-height: 600px) {
   .quest_header h1 {
     width: 90%;
   }

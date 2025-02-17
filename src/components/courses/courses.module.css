@@ -84,9 +84,8 @@
     min-height: 800px;
   }
   .courses_main button {
-   margin-bottom: 10vh;
+    margin-bottom: 10vh;
   }
-
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .courses_container {
@@ -107,7 +106,7 @@
 }
 @media (max-width: 480px) {
   .courses_container {
-    height: 200vh;
+    max-height: 220vh;
   }
   .courses_main_text ul {
     margin: 40px;
@@ -117,6 +116,7 @@
   }
   .courses_main button {
     width: 90%;
+    height: 10vh;
     font-size: 1.5rem;
     margin-bottom: 10vh;
   }
@@ -154,6 +154,6 @@
   .courses_main button {
     margin-bottom: 10vh;
     font-size: 1.2rem;
-max-height: 20vh;
+    max-height: 20vh;
   }
 }

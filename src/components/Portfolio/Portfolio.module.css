@@ -12,6 +12,16 @@
   display: flex;
   justify-content: space-between;
 }
+.portfolio_main_text .portfolio_last {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 35px;
+}
+.portfolio_main_text .portfolio_line {
+  border: none;
+  height: 2px;
+  background-color: rgb(197, 194, 194);
+}
 .portfolio_images {
   margin: 10px;
   max-width: 550px;
@@ -109,7 +119,7 @@
     justify-content: left;
   }
   .portfolio_main_text p {
-    font-size: 16px;
+    font-size: 0.9em;
   }
   .portfolio_main_text li {
     font-size: 16px;
@@ -126,7 +136,7 @@
     margin-top: 20px;
   }
   .portfolio_head h1 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
 @media (min-width: 1025px) {
@@ -144,7 +154,7 @@
   }
   .portfolio_images {
     width: 90%;
-    height:auto;
+    height: auto;
     border-radius: 30px;
     margin-top: 35px;
   }

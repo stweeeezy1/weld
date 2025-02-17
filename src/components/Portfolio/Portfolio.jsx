@@ -50,7 +50,8 @@ export default function Portfolio() {
             <li>{t("portfolio_plumbing")}</li>
             <li>{t("portfolio_individual")}</li>
           </ul>
-          <p>{t("portfolio_audience")}</p>
+          <p className={styles.portfolio_last}>{t("portfolio_audience")}</p>
+          <hr className={styles.portfolio_line} />
         </div>
       </div>
     </div>
