@@ -24,7 +24,7 @@ export default function Header() {
       className={styles.header_container}
     >
       <div className={styles.header}>
-        <img src={logo} alt="Logo" className={styles.logo} />
+        <img src={logo} alt="Logo" className={styles.logo} onClick={() => scrollToSection("home")}/>
         <div className={styles.menu_icon} onClick={toggleMenu}>
           ☰
         </div>
