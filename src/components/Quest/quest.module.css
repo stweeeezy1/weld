@@ -85,3 +85,13 @@
     width: 90%;
   }
 }
+@media (min-height: 1300px) {
+  .quest_container {
+    max-height: 20vh;
+  }
+  .quest_container button {
+    margin-bottom: 10vh;
+    font-size: 1.2rem;
+    max-height: 5vh;
+  }
+}

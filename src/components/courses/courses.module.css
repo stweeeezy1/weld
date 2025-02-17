@@ -169,3 +169,13 @@
     max-height: 20vh;
   }
 }
+@media (min-height: 1300px) {
+  .courses_container {
+    min-height: 20vh;
+  }
+  .courses_main button {
+    margin-bottom: 10vh;
+    font-size: 1.2rem;
+    max-height: 5vh;
+  }
+}

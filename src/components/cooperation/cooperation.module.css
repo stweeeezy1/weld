@@ -121,3 +121,13 @@
     max-height: 20vh;
   }
 }
+@media (min-height: 1300px) {
+  .cooperation_container {
+    max-height: 20vh;
+  }
+  .cooperation_container button {
+    margin-bottom: 10vh;
+    font-size: 1.2rem;
+    max-height: 5vh;
+  }
+}
