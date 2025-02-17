@@ -27,6 +27,7 @@
   font-size: 32px;
   font-weight: 700;
   margin-top: 40px;
+  color: var(--color-text);
 }
 .blockInfo1,
 .blockInfo4 {
@@ -34,6 +35,7 @@
   margin-bottom: 5vh;
   font-size: 22px;
   width: 90%;
+  color: var(--color-text);
 }
 .blockInfo2,
 .blockInfo3 {
@@ -41,6 +43,7 @@
   margin-bottom: 5vh;
   margin-top: 35px;
   font-size: 22px;
+  color: var(--color-text);
 }
 .service_line {
   border: none;
@@ -52,7 +55,7 @@
     width: 85%;
   }
   .servicesContainer {
-    min-height: 160vh;
+    min-height: 140vh;
     width: 100%;
   }
   .blockHead1,
@@ -60,18 +63,15 @@
   .blockHead3,
   .blockHead4 {
     font-size: 26px;
-  }
-  .blockInfo1,
-  .blockInfo2,
-  .blockInfo3,
-  .blockInfo4 {
-    font-size: 20px;
+    color: var(--color-text);
   }
   .blockInfo1,
   .blockInfo2,
   .blockInfo3,
   .blockInfo4 {
     margin-top: 10px;
+    font-size: 20px;
+    color: var(--color-text);
   }
   .servicesBlock2 {
     min-height: 20vh;
@@ -104,6 +104,7 @@
   .blockHead4 {
     margin-left: 30px;
     margin-right: 30px;
+    color: var(--color-text);
   }
   .blockInfo1,
   .blockInfo2,
@@ -159,16 +160,14 @@
   .blockHead4 {
     margin-left: 30px;
     margin-right: 30px;
+    color: var(--color-text);
   }
-  .blockHead2,
-  .blockHead3 {
-    margin-top: 0px;
-  }
-
   .blockInfo1,
   .blockInfo2,
   .blockInfo3,
   .blockInfo4 {
+    margin-top: 10px;
+
     font-size: 17px;
   }
   .servicesBlock1 {
@@ -188,16 +187,10 @@
     justify-content: space-between;
     gap: 35px;
   }
-  .blockInfo1,
-  .blockInfo2,
-  .blockInfo3,
-  .blockInfo4 {
-    margin-top: 10px;
-  }
 }
 @media (max-width: 480px) {
   .servicesContainerMain {
-    min-height: 170vh;
+    min-height: 180vh;
     width: 90%;
   }
 
@@ -223,6 +216,7 @@
   .blockHead4 {
     margin-left: 20px;
     margin-right: 20px;
+    color: var(--color-text);
   }
   .blockHead1,
   .blockHead2,
@@ -235,12 +229,13 @@
   .blockInfo3,
   .blockInfo4 {
     font-size: 15px;
+    margin-bottom: 200px;
   }
   .servicesBlock1 {
     min-height: 30vh;
   }
   .servicesBlock2 {
-    min-height: 30vh;
+    min-height: 300px;
   }
   .servicesBlock3 {
     min-height: 30vh;
@@ -248,17 +243,6 @@
   .servicesBlock4 {
     max-height: 30vh;
     margin-bottom: 10vh;
-  }
-  .twoBlocksContainer {
-    display: block;
-    justify-content: space-between;
-    gap: 35px;
-  }
-  .blockInfo1,
-  .blockInfo2,
-  .blockInfo3,
-  .blockInfo4 {
-    margin-bottom: 200px;
   }
 }
 @media (max-height: 600px) {

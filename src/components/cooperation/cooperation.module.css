@@ -74,7 +74,7 @@
     font-size: 55px;
   }
   .cooperation_main button {
-    font-size: 34px;
+    font-size: 30px;
     width: 80%;
   }
 }
@@ -93,7 +93,7 @@
 }
 @media (max-width: 480px) {
   .cooperation_container {
-    height: 160vh;
+    height: 120vh;
   }
   .cooperation_main_text ul {
     margin: 40px;

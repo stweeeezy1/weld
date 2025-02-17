@@ -49,6 +49,13 @@
     font-size: 32px;
     max-width: 80%;
   }
+  .quest_header h1 {
+    font-size: 3em;
+    width: 90%;
+  }
+  .quest_header p {
+    font-size: 1.2em;
+  }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .info_container {
@@ -61,6 +68,7 @@
   }
   .quest_header h1 {
     font-size: 2em;
+    width: 90%;
   }
   .quest_header p {
     font-size: 0.9em;
