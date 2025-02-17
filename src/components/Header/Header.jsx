@@ -24,7 +24,12 @@ export default function Header() {
       className={styles.header_container}
     >
       <div className={styles.header}>
-        <img src={logo} alt="Logo" className={styles.logo} onClick={() => scrollToSection("home")}/>
+        <img
+          src={logo}
+          alt="Logo"
+          className={styles.logo}
+          onClick={() => scrollToSection("home")}
+        />
         <div className={styles.menu_icon} onClick={toggleMenu}>
           ☰
         </div>
@@ -67,7 +72,11 @@ export default function Header() {
             </motion.button>
           </a>
         </div>
-        <img src={mainImg} alt="main" className={styles.header_main_image} />
+        <img
+          src={mainImg}
+          alt="mainImage"
+          className={styles.header_main_image}
+        />
       </div>
     </motion.header>
   );

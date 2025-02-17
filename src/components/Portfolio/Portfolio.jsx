@@ -32,14 +32,14 @@ export default function Portfolio() {
             transition={{ duration: 1 }}
             className={styles.portfolio_images}
             src={image2}
-            href="products"
+            href="product2"
           ></motion.img>
           <motion.img
             variants={animationB2}
             transition={{ duration: 1 }}
             className={styles.portfolio_images}
             src={image3}
-            href="products"
+            href="product3"
           ></motion.img>
         </motion.div>
         <div className={styles.portfolio_main_text}>

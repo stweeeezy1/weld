@@ -138,49 +138,27 @@
     width: 90%;
   }
 
-  .servicesBlock1,
-  .servicesBlock2,
-  .servicesBlock3,
-  .servicesBlock4 {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-  }
   .servicesContainer {
     background: var(--gradient-bg4);
     min-height: 170vh;
   }
   .blockInfo1,
-  .blockHead1,
-  .blockInfo2,
-  .blockHead2,
-  .blockInfo3,
-  .blockHead3,
-  .blockInfo4,
-  .blockHead4 {
-    margin-left: 30px;
-    margin-right: 30px;
-    color: var(--color-text);
-  }
-  .blockInfo1,
   .blockInfo2,
   .blockInfo3,
   .blockInfo4 {
-    margin-top: 10px;
-
     font-size: 17px;
   }
   .servicesBlock1 {
-    min-height: 40vh;
+    min-height: 25vh;
   }
   .servicesBlock2 {
-    min-height: 40vh;
+    min-height: 25vh;
   }
   .servicesBlock3 {
-    min-height: 30vh;
+    min-height: 20vh;
   }
   .servicesBlock4 {
-    margin-bottom: 10vh;
+    margin-bottom: 5vh;
   }
   .twoBlocksContainer {
     display: block;
@@ -188,9 +166,9 @@
     gap: 35px;
   }
 }
-@media (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px) {
   .servicesContainerMain {
-    min-height: 180vh;
+    min-height: 160vh;
     width: 90%;
   }
 
@@ -232,16 +210,73 @@
     margin-bottom: 200px;
   }
   .servicesBlock1 {
-    min-height: 30vh;
+    min-height: 25vh;
   }
   .servicesBlock2 {
-    min-height: 300px;
+    min-height: 25vh;
   }
   .servicesBlock3 {
-    min-height: 30vh;
+    min-height: 20vh;
   }
   .servicesBlock4 {
+    max-height: 20vh;
+    margin-bottom: 5vh;
+  }
+}
+@media (max-width: 320px) {
+  .servicesContainerMain {
+    min-height: 160vh;
+    width: 90%;
+  }
+
+  .servicesBlock1,
+  .servicesBlock2,
+  .servicesBlock3,
+  .servicesBlock4 {
+    width: 100%;
+  }
+  .servicesInfo h1 {
+    font-size: 2.5em;
+  }
+  .servicesInfo p {
+    font-size: 1.2em;
+  }
+  .blockInfo1,
+  .blockHead1,
+  .blockInfo2,
+  .blockHead2,
+  .blockInfo3,
+  .blockHead3,
+  .blockInfo4,
+  .blockHead4 {
+    margin-left: 20px;
+    margin-right: 20px;
+    color: var(--color-text);
+  }
+  .blockHead1,
+  .blockHead2,
+  .blockHead3,
+  .blockHead4 {
+    font-size: 26px;
+  }
+  .blockInfo1,
+  .blockInfo2,
+  .blockInfo3,
+  .blockInfo4 {
+    font-size: 15px;
+    margin-bottom: 200px;
+  }
+  .servicesBlock1 {
     max-height: 30vh;
+  }
+  .servicesBlock2 {
+    min-height: 25vh;
+  }
+  .servicesBlock3 {
+    min-height: 20vh;
+  }
+  .servicesBlock4 {
+    max-height: 20vh;
     margin-bottom: 10vh;
   }
 }
@@ -255,6 +290,7 @@
     max-height: 9vh;
   }
   .servicesBlock1 {
+    margin-top: 5vh;
     min-height: 15vh;
   }
   .servicesBlock3 {
@@ -263,16 +299,16 @@
 }
 @media (max-height: 600px) {
   .servicesBlock2 {
-    min-height: 70vh;
-  }
-  .servicesBlock1 {
-    min-height: 60vh;
-  }
-  .servicesBlock3 {
     min-height: 50vh;
   }
+  .servicesBlock1 {
+    min-height: 45vh;
+  }
+  .servicesBlock3 {
+    min-height: 40vh;
+  }
   .servicesBlock4 {
-    margin-bottom: 20vh;
+    margin-bottom: 15vh;
   }
   .servicesContainer {
     min-height: 1000vh;
