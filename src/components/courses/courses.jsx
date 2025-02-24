@@ -31,7 +31,7 @@ export default function Courses() {
             <li>{t("courses_certification")}</li>
           </ul>
           <p>{t("courses_audience")}</p>
-          <a href="https://a1koolitus.ee/" target="_blank">
+          <a href="https://www.ehitajatekoolituskeskus.ee/" target="_blank">
             <motion.button
               initial="hidden"
               whileInView="visible"
