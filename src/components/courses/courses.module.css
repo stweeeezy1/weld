@@ -37,28 +37,6 @@
   font-weight: 400;
   color: var(--color-text);
 }
-.courses_main button {
-  font-weight: 600;
-  font-size: 38px;
-  color: var(--color-text);
-  background: var(--gradient-btn);
-  border-radius: 50px;
-  width: 479px;
-  height: 110px;
-  border: none;
-  margin-top: 65px;
-  margin-bottom: 10vh;
-
-  cursor: pointer;
-  box-shadow: 0 0 20px rgba(255, 127, 84, 0.8), 0 0 40px rgba(255, 138, 80, 0.6),
-    0 0 60px rgba(255, 149, 77, 0.4);
-  transition: box-shadow 0.5s ease-in-out;
-}
-
-.courses_main button:hover {
-  box-shadow: 0 0 30px rgba(255, 127, 84, 1), 0 0 40px rgba(255, 138, 80, 0.8),
-    0 0 70px rgba(255, 149, 77, 0.6);
-}
 @media (min-width: 481px) and (max-width: 768px) {
   .courses_container {
     height: 1000px;
@@ -72,19 +50,10 @@
   .courses_main {
     width: 90%;
   }
-  .courses_main button {
-    margin-bottom: 10vh;
-
-    width: 80%;
-    font-size: 32px;
-  }
 }
 @media (min-width: 1024px) and (max-width: 1440px) {
   .courses_container {
     min-height: 800px;
-  }
-  .courses_main button {
-    margin-bottom: 10vh;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -100,9 +69,6 @@
   .courses_main {
     width: 90%;
   }
-  .courses_main button {
-    margin-bottom: 10vh;
-  }
   .courses_main_text p {
     width: 85%;
   }
@@ -116,12 +82,6 @@
   }
   .courses_main_text li {
     margin-top: 10px;
-  }
-  .courses_main button {
-    width: 90%;
-    height: 10vh;
-    font-size: 1.5rem;
-    margin-bottom: 10vh;
   }
   .courses_header h1 {
     font-size: 45px;
@@ -141,7 +101,7 @@
 }
 @media (min-height: 840px) {
   .courses_container {
-    min-height: 90vh;
+    min-height: 60vh;
   }
 }
 @media (max-height: 840px) {
@@ -163,19 +123,10 @@
   .courses_container {
     max-height: 310vh;
   }
-  .courses_main button {
-    margin-bottom: 10vh;
-    font-size: 1.2rem;
-    max-height: 20vh;
-  }
 }
 @media (min-height: 1300px) {
   .courses_container {
     min-height: 20vh;
   }
-  .courses_main button {
-    margin-bottom: 10vh;
-    font-size: 1.2rem;
-    max-height: 5vh;
-  }
+
 }

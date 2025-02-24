@@ -31,19 +31,6 @@ export default function Courses() {
             <li>{t("courses_certification")}</li>
           </ul>
           <p>{t("courses_audience")}</p>
-          <a href="https://www.ehitajatekoolituskeskus.ee/" target="_blank">
-            <motion.button
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, margin: "0px 0px -50px 0px" }}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.8 }}
-              variants={animationb}
-              transition={{ duration: 0.75 }}
-            >
-              {t("courses_cta")}
-            </motion.button>
-          </a>
         </div>
       </div>
     </div>
