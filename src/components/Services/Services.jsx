@@ -1,7 +1,7 @@
 import styles from "./Services.module.css";
 import { useLanguage } from "/src/useLanguage.js";
 import { motion } from "framer-motion";
-import { animationB2, animationB4 } from "/src/animation.js";
+import {  animationB4 } from "/src/animation.js";
 export default function Services() {
   const { language, toggleLanguage, t } = useLanguage();
   return (
@@ -31,7 +31,7 @@ export default function Services() {
               whileInView="visible"
               viewport={{ once: true, margin: "0px 0px -50px 0px" }}
               className={styles.servicesBlock2}
-              variants={animationB2}
+              variants={animationB4}
               transition={{ duration: 1.25 }}
             >
               <h2 className={styles.blockHead2}>{t("pipe_title")}</h2>
@@ -47,7 +47,7 @@ export default function Services() {
               whileInView="visible"
               viewport={{ once: true, margin: "0px 0px -50px 0px" }}
               className={styles.servicesBlock3}
-              variants={animationB2}
+              variants={animationB4}
               transition={{ duration: 1.5 }}
             >
               <h2 className={styles.blockHead3}>{t("learn_title")}</h2>

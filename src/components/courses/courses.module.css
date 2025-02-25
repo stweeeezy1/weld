@@ -101,12 +101,12 @@
 }
 @media (min-height: 840px) {
   .courses_container {
-    min-height: 60vh;
+    min-height: 80vh;
   }
 }
 @media (max-height: 840px) {
   .courses_container {
-    max-height: 170vh;
+    min-height: 90vh;
   }
 }
 @media (max-height: 710px) {
@@ -116,17 +116,17 @@
 }
 @media (max-height: 620px) {
   .courses_container {
-    max-height: 220vh;
+    min-height: 100vh;
   }
 }
 @media (max-height: 550px) {
   .courses_container {
-    max-height: 310vh;
+    min-height: 120vh;
   }
 }
 @media (min-height: 1300px) {
   .courses_container {
-    min-height: 20vh;
+    min-height: 45vh;
   }
 
 }
